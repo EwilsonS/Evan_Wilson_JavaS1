@@ -1,6 +1,7 @@
-#Evan Wilson####(Evan_Wilson_JavaS1)
+#Evan Wilson
+####(Evan_Wilson_JavaS1)
 
-> "They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk
+> #"They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk
 
 ### Prework
  **Terms to explore**
