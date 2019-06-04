@@ -3,13 +3,11 @@
 
 > #"They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk
 
-### Prework
- **Terms to explore**
+ **Terms to explore(Prework)**  
  - port binding
  - concurrency
- - 
 
-**Git Shorts**
+**Git Shorts**  
 `git checkout -b name-of-new-branch`
 `git branch`  will show 
 `git touch`... edit your stuff
@@ -18,12 +16,13 @@
 `git push origin name-of-branch` 
 `git branch -D name-of-branch`
 
-**Java Bootcamp**
-- 6/3/2018
-One week redos for summatives
-JRE- runtime environment
-JDK-development kit
-IDE-integrated development environment
+**Java Bootcamp**  
+
+_6/3/2018_  
+One week redos for summatives  
+JRE- runtime environment  
+JDK-development kit  
+IDE-integrated development environment  
   - Eclipse
   - NetBeans
   - IntelliJ Idea
