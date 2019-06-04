@@ -1,7 +1,10 @@
 # [Evan Wilson](https://ewilsons.github.io/)
 #### (Evan_Wilson_JavaS1)
 
-> "They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk
+> "They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk  
+
+***
+## Class Notes
 
  **Terms to explore(Prework)**  
  - port binding
@@ -18,7 +21,8 @@
 
 **Java Bootcamp**  
 
-_6/3/2018_  
+**_6/3/2018_**  
+
 One week redos for summatives  
 JRE- runtime environment  
 JDK-development kit  
