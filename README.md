@@ -45,17 +45,20 @@ IDE-integrated development environment
   Data v Info - data has no contex... we make the info  
   Stepwise problem solving - cpu does what we say. garbage in => garbage out  
   Abstraction of real world processes. ie desktop  
-  Data Type
+  Data Types  
    `String`
    `char`
-  - boolean
-  - byte 8 bit
-  - short 16
-  - int 32
-  - long 64
-  - float 32
-  - double 64
-  - long
+   `boolean`
+
+   `byte 8 bit`
+   `short 16`
+   `int 32`  
+
+   `long 64`
+   `float 32`
+   `double 64`  
+
+   `long`  
   Variable name rules(identifiers)
   - no dashes
   - cannot begin with a digit
