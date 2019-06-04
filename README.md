@@ -46,8 +46,8 @@ IDE-integrated development environment
   Stepwise problem solving - cpu does what we say. garbage in => garbage out  
   Abstraction of real world processes. ie desktop  
   Data Type
-  - String
-  - char
+   `String`
+   `char`
   - boolean
   - byte 8 bit
   - short 16
