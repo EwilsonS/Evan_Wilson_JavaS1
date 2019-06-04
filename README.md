@@ -42,10 +42,11 @@ IDE-integrated development environment
   - Kanban
   - Jira
 
-  Data v Info - data has no contex... we make the info  
-  Stepwise problem solving - cpu does what we say. garbage in => garbage out  
+  _Data v Info_ - data has no contex... we make the info  
+  _Stepwise problem solving_ - cpu does what we say. garbage in => garbage out  
   Abstraction of real world processes. ie desktop  
   Data Types  
+
    `String`
    `char`
    `boolean`
