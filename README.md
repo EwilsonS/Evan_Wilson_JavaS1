@@ -72,6 +72,6 @@ IDE-integrated development environment
   _Expressions_ evaluate to a single value  
 
   _Scanner_ - used to get user input  
-  _Comments_ - /** JavaDoc Comments / 
+  _Comments_ - /** JavaDoc Comments /  
 
-
+**`comment`, `debug`, `comment`, `debug`, `comment`, `debug`**
