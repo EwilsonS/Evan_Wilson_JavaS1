@@ -21,7 +21,7 @@ _________________________________________________
 `git branch -D name-of-branch`  
 
 _________________________________________________
-**_6/3/2018_**  
+**_6/3/2019_**  
 
 One week redos for summatives  
 JRE- runtime environment  
@@ -33,3 +33,41 @@ IDE-integrated development environment
   J2EE libraries
   - Jakarta (apache)
   - Spring(most popular)
+
+  _________________________________________________
+  **_6/4/2019_**
+
+  Iteration Planning  
+  - Pivotal Tracker
+  - Kanban
+  - Jira
+
+  Data v Info - data has no contex... we make the info  
+  Stepwise problem solving - cpu does what we say. garbage in => garbage out  
+  Abstraction of real world processes. ie desktop  
+  Data Type
+  - String
+  - char
+  - boolean
+  - byte 8 bit
+  - short 16
+  - int 32
+  - long 64
+  - float 32
+  - double 64
+  - long
+  Variable name rules(identifiers)
+  - no dashes
+  - cannot begin with a digit
+  - $ are ok  
+  Java Naming Conventions
+  - Class & Variables - **nouns**
+  - Methods - **verbs, camelCase**
+  - Variables **camelCase**
+  - Classes - **PascalCase**  
+  _Expressions_ evaluate to a single value  
+
+  _Scanner_ - used to get user input  
+  _Comments_ - /** JavaDoc Comments / 
+
+
