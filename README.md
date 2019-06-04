@@ -1,9 +1,8 @@
+_Evan\_Wilson\_JavaS1_
 # [Evan Wilson](https://ewilsons.github.io/)
-#### (Evan_Wilson_JavaS1)
 
 > "They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk  
 
-***
 ## Class Notes
 _________________________________________________
 **_Prework_**  
