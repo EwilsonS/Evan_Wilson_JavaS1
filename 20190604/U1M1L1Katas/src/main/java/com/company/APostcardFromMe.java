@@ -3,7 +3,7 @@ package com.company;
 public class APostcardFromMe {
     public static void main(String[] args) {
 
-        String aPostCardFromMe = "*------------------------------------------------------------------*\n" +
+        String aPostcardFromMe = "*------------------------------------------------------------------*\n" +
                 "| John Smith                                                       |\n" +
                 "| 123 Main Street                                                  |\n" +
                 "| Hometown, MN 55555                                               |\n" +
@@ -14,6 +14,6 @@ public class APostcardFromMe {
                 "|                                                                  |\n" +
                 "|                                                                  |\n" +
                 "*------------------------------------------------------------------*";
-        System.out.println(aPostCardFromMe);
+        System.out.println(aPostcardFromMe);
     }
 }
