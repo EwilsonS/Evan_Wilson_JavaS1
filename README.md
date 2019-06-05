@@ -75,3 +75,18 @@ IDE-integrated development environment
   _Comments_ - /** JavaDoc Comments /  
 
 **`comment`, `debug`, `comment`, `debug`, `comment`, `debug`**
+
+_________________________________________________
+  **_6/5/2019_**
+  _Booleans expressions_ 
+  - Relational
+    - == != > < <= >=
+  - Conditional
+    - && ||
+
+_Loops_
+- While/ DO While
+  - keep going until the condition is met
+- For
+  - define a stopping point
+
