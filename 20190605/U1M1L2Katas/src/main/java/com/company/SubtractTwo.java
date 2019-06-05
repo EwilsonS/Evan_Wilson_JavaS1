@@ -6,7 +6,7 @@ public class SubtractTwo {
 
     public static void main(String[] args) {
 
-        // Subtract the second number from the first number inputted by the user.
+        //Subtracts the second number from the first number inputted by the user.
         Scanner myScanner = new Scanner(System.in);
 
         System.out.println("Subtraction time! I need two numbers \nFirst number");
