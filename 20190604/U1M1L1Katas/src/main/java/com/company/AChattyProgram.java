@@ -6,10 +6,10 @@ public class AChattyProgram {
         String aChattyProgram = "Hi!\n" +
                 "How are you?\n" +
                 "I'm fine!\n" +
-                "Doing really well in fact..\n" +
+                "Doing really well in fact...\n" +
                 "Isn't it a beautiful day?\n" +
-                "Smiling is my favorite!\n" +
-                "Good bye!";
+                "Smiling is my favorite\n" +
+                "Good bye!!";
 
         System.out.println(aChattyProgram);
     }

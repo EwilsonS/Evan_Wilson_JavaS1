@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e78cda4-4277-425e-ba2f-1ce1391846d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-    </list>
+    <list default="true" id="8e78cda4-4277-425e-ba2f-1ce1391846d0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/U1M1L1Katas/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,9 +212,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="364" y="64" width="1060" height="832" extended-state="0" />
+    <frame x="0" y="51" width="1032" height="774" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39609054" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
