@@ -85,8 +85,15 @@ _________________________________________________
     - && ||
 
 _Loops_
-- While/ DO While
-  - keep going until the condition is met
-- For
-  - define a stopping point
+- While/ Do While
+  - <p> 
+  While- keep going until the condition is met be careful of infinite loops
+  </p>
+  <p>
+  Do While- sets an ending condition
+  </p>
 
+- For
+  - define a stopping point.
+`continue`
+`break`
