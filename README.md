@@ -97,3 +97,18 @@ _Loops_
   - define a stopping point.
 `continue`
 `break`
+
+_________________________________________________
+  **_6/6/2019_**
+
+  `Debug``Dry` `Methods`  
+  _Method Signature_ - public static int num(x, y)  
+
+  System.out.println() **does not** return a value  
+  nextLine() **does return** a value  
+  _forms of methods_  
+  - no return value, no params
+  - return value, no params
+  - no return value, params
+  - return value, one or more prams 
+
