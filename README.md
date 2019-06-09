@@ -1,4 +1,3 @@
-_Evan\_Wilson\_JavaS1_
 # [Evan Wilson](https://ewilsons.github.io/)
 
 > "They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk  
@@ -77,12 +76,12 @@ IDE-integrated development environment
 **`comment`, `debug`, `comment`, `debug`, `comment`, `debug`**
 
 _________________________________________________
-  **_6/5/2019_**
+  **_6/5/2019_**  
   _Booleans expressions_ 
   - Relational
     - ==, !=, >, <, <=, >=
   - Conditional - &&, ||
-  
+
 _Loops_
 - While/ Do While
   - While- keep going until the condition is met be careful of infinite loops
@@ -93,9 +92,11 @@ _Loops_
 `break` - exits loop
 
 _________________________________________________
-  **_6/6/2019_**
+  **_6/6/2019_**  
 
-  `Debug``Dry` `Methods`  
+  `Debug` - Debugger is an essential tool.  
+  `Dry` - Dont repeat code.  
+  `Methods`  
   _Method Signature_ - public static int num(x, y)  
 
   System.out.println() **does not** return a value  
@@ -118,5 +119,8 @@ Agile  led by scrum master
 - sprint
   - standup
 - retrospective - hi's and lows. 
-  - H)file structure tips were helpful, forced pair programming
-  - L)slow pace, inconsistent tests
+  - H) file structure tips were helpful, forced pair programming
+  - L) slow pace, inconsistent tests  
+
+  _________________________________________________
+  **_6/10/2019_**
