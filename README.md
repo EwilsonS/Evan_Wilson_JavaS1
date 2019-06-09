@@ -72,7 +72,7 @@ IDE-integrated development environment
   _Expressions_ evaluate to a single value  
 
   _Scanner_ - used to get user input  
-  _Comments_ - /** JavaDoc Comments /  
+  _Comments_ - /** JavaDoc Comments */  
 
 **`comment`, `debug`, `comment`, `debug`, `comment`, `debug`**
 
@@ -80,23 +80,17 @@ _________________________________________________
   **_6/5/2019_**
   _Booleans expressions_ 
   - Relational
-    - == != > < <= >=
-  - Conditional
-    - && ||
-
+    - ==, !=, >, <, <=, >=
+  - Conditional - &&, ||
+  
 _Loops_
 - While/ Do While
-  - <p> 
-  While- keep going until the condition is met be careful of infinite loops
-  </p>
-  <p>
-  Do While- sets an ending condition
-  </p>
+  - While- keep going until the condition is met be careful of infinite loops
+ -  Do While- sets an ending condition
 
-- For
-  - define a stopping point.
-`continue`
-`break`
+- For - define a stopping point.  
+`continue` - restarts loop
+`break` - exits loop
 
 _________________________________________________
   **_6/6/2019_**
