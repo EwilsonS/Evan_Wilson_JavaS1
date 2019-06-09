@@ -112,3 +112,17 @@ _________________________________________________
   - no return value, params
   - return value, one or more prams 
 
+_________________________________________________
+  **_6/7/2019_**
+
+  Data structues  
+  Arrays - fixed number, same data type for _elements_ in the array.
+
+  * convert num within a statement- sum/(double)len*witdh
+  
+Agile  led by scrum master
+- sprint
+  - standup
+- retrospective - hi's and lows. 
+  - H)file structure tips were helpful, forced pair programming
+  - L)slow pace, inconsistent tests
