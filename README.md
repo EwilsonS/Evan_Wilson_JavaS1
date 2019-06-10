@@ -126,16 +126,16 @@ _________________________________________________
   **_6/10/2019_**  
 _Java objects_  
 Key concepts  
-- Composition - Object of objects
-- Abstraction
-- Assembly language
-- Everything is an object
-- Every object/class has a type
-  - A new object/class defines a new type.
-- Objects have **state**, **behavior** and **identity**
-  - state of a car - color, shange color => change state
-  - behavior - methods of the object
-  - Distinguishes each obj from every other obj  
+  - Composition - Object of objects
+  - Abstraction
+  - Assembly language
+  - Everything is an object
+  - Every object/class has a type
+    - A new object/class defines a new type.
+  - Objects have **state**, **behavior** and **identity**
+    - state of a car - color, shange color => change state
+    - behavior - methods of the object
+    - Distinguishes each obj from every other obj  
 
   Public interface and private implementation  
   - Accessible to the outside world (public)
