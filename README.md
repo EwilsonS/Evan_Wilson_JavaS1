@@ -122,5 +122,10 @@ Agile  led by scrum master
   - H) file structure tips were helpful, forced pair programming
   - L) slow pace, inconsistent tests  
 
-  _________________________________________________
-  **_6/10/2019_**
+_________________________________________________
+  **_6/10/2019_**  
+_Java objects_  
+Key concepts  
+  - Abstraction
+  - Assembly language
+  - Everything is an object
