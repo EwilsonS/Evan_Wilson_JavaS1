@@ -152,5 +152,4 @@ Key concepts
   Data Hiding - Close to encapsulation, works within the private imlpementation
   - Only share pertinent info with user  
 
-  Delegation - Private implementation will delegate the work to existing classes  
-  - 
+  Delegation - Private implementation will delegate the work to existing classes 
