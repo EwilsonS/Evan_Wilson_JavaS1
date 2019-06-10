@@ -124,26 +124,32 @@ Agile  led by scrum master
 
 _________________________________________________
   **_6/10/2019_**  
-_Java objects_  
+###_Java objects_  
 Key concepts  
-  - Abstraction
-  - Assembly language
-  - Everything is an object
-  - Every object/class has a type
-    - A new object/class defines a new type.
-  - "Object has state behavior and identity"
-    - state of a car - color, shange color => change state
-    - behavior - methods of the object
-    - Distinguishes each obj from every other obj  
+- Abstraction
+- Assembly language
+- Everything is an object
+- Every object/class has a type
+  - A new object/class defines a new type.
+- Objects have **state**, **behavior** and **identity**
+  - state of a car - color, shange color => change state
+  - behavior - methods of the object
+  - Distinguishes each obj from every other obj  
 
-  Public interface and private implementation
-    - Accessible to the outside world (public)
-    - The _how_ should be hidden (private)
-    - i.e. ATM machine  
+  Public interface and private implementation  
+  - Accessible to the outside world (public)
+  - The _how_ should be hidden (private)
+  - i.e. ATM machine  
 
-  Encapsulation
-    - A well defined class has a public interface that clearly defines what the class does
-    - Has a well defned area of responsiblilty
-    - The class should do one thing, well and completely
-    - Cohesion- related stuff in one place, no random 
-    - Single resposibilty principle
+  Encapsulation  
+  - A well defined class has a public interface that clearly defines what the class does
+  - Has a well defned area of responsiblilty
+  - The class should do one thing, well and completely
+  - Cohesion- related stuff in one place, no random 
+  - Single resposibilty principle
+
+  Data Hiding - Close to encapsulation, works within the private imlpementation
+  - Only share pertinent info with user  
+
+  Delegation - Private implementation will delegate the work to existing classes  
+  - 
