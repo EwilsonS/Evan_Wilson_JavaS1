@@ -124,7 +124,7 @@ Agile  led by scrum master
 
 _________________________________________________
   **_6/10/2019_**  
-###_Java objects_  
+_Java objects_  
 Key concepts  
 - Composition - Object of objects
 - Abstraction
