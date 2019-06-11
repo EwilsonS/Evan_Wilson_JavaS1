@@ -157,12 +157,13 @@ Key concepts
 _________________________________________________
 **_6/11/2019_**  
 _Classes & Objects pt2_  
+
 _Class_ - is the blueprint/ model  
   - Every class **is a type**  
   - _Types_- numbers, text, booleans **user defined data types**  
 _Instantiate(creeate an instance of)_ - is to actually build the model  
 _Properties, getters, and setters_  
-_Contructors_-called when you want to instantiate a class  
+_Contructors_- called when you want to instantiate a class  
   - used to initialize(set the internal state) of the object.
   - constructor must have the same name as the class that contains it.
   - Does not have a return type, not even void  
