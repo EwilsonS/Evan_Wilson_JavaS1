@@ -153,3 +153,25 @@ Key concepts
   - Only share pertinent info with user  
 
   Delegation - Private implementation will delegate the work to existing classes 
+
+_________________________________________________
+**_6/11/2019_**
+_Classes & Objects pt2_  
+_Class_ - is the blueprint/ model  
+_Instantiate(creeate an instance of)_ is to actually build the model  
+_Types_- numbers, text, booleans **user defined data types**  
+  - Every class is a type  
+_Properties, getters, and setters_  
+_Contructors_-called when you want to instantiate a class  
+  - used to initialize(set the internal state) of the object.
+  - constructor must have the same name as the class that contains it.
+  - Does not have a return type, not even void  
+  - Class can have more than one constructor
+_Methods_ - (see previous work)  
+_this keyword_
+  - refers to the **object**
+_static_ 
+  - static methods are onlly associated woth the class and _not_ any particular instance of the class.  
+  - static meths can be accessed w/o creating an instance of the class.
+_Dot(.) Operator_
+
