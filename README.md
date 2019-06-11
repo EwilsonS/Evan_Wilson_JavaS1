@@ -180,6 +180,7 @@ _this keyword_
 _static_ 
   - static methods are onlly associated woth the class and _not_ any particular instance of the class.  
   - static meths can be accessed w/o creating an instance of the class.  
+  - ex) Class.method();
 
 _Dot(.) Operator_
 
