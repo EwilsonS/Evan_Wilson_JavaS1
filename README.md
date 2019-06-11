@@ -162,7 +162,7 @@ _Class_ - is the blueprint/ model
   - Every class **is a type**  
   - _Types_- numbers, text, booleans **user defined data types**  
 
-  _Instantiate(creeate an instance of)_ - is to actually build the model  
+  _Instantiate(create an instance of)_ - is to actually build the model  
 
 _Properties, getters, and setters_  
 
@@ -178,9 +178,49 @@ _this keyword_
   - refers to the **object**  
 
 _static_ 
-  - static methods are onlly associated woth the class and _not_ any particular instance of the class.  
+  - static methods are only associated with the class and _not_ any particular instance of the class.  
   - static meths can be accessed w/o creating an instance of the class.  
   - ex) Class.method();
 
-_Dot(.) Operator_
+_Dot(.) Operator_  
 
+_Instantiate_ - by using the "new" keyword  
+  - JVM will store new instance in **heap** memory and gives a reference  
+
+_Stack Heap_  
+  - Stack memory only exists ifor the duration of the code block they are in  
+  - Local primitive values live on the stack
+  - The reference variable the point to the heap lives in the stack.  
+  OBjs created with the _new_ operator live on the heap and we use references to access them  
+
+_Garbage collection_  
+  - Java is a managed language(using new, JVM allocates memory accordingly)  
+  - Objs on the heap are eligible for garbage collection when there are no more references pointing to them.  
+  - end a reference manually by setting **null**
+  - referenced auto end when the method returns  
+
+  _Pass arameters by value & reference_
+    - value - copies value into another var, two completely diff variables that can be changed  
+    - ref - 
+    - Java is a pass by value language
+
+
+
+
+
+
+
+
+_________________________________________________
+**_6/12/2019_**  
+
+_________________________________________________
+**_6/13/2019_**  
+
+_________________________________________________
+**_6/14/2019_**  
+
+
+
+**Retrospective**  
+pass by value/ref lion example before lecture exaples
