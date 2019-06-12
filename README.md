@@ -118,10 +118,12 @@ _________________________________________________
 Agile  led by scrum master
 - sprint
   - standup
-- retrospective - hi's and lows. 
+- retrospective 
+  - hi's and lows. 
+
+**Retrospective**
   - H) file structure tips were helpful, forced pair programming
   - L) slow pace, inconsistent tests  
-
 _________________________________________________
   **_6/10/2019_**  
 _Java objects_  
@@ -199,20 +201,15 @@ _Garbage collection_
   - end a reference manually by setting **null**
   - referenced auto end when the method returns  
 
-  _Pass arameters by value & reference_
+  _Pass parameters by value & reference_
     - value - copies value into another var, two completely diff variables that can be changed  
-    - ref - 
+    - ref - passes value of the reference  
     - Java is a pass by value language
 
-
-
-
-
-
-
-
+  _Method Overloading_ - same name different params, for code reuse  
 _________________________________________________
 **_6/12/2019_**  
+
 
 _________________________________________________
 **_6/13/2019_**  
@@ -223,4 +220,5 @@ _________________________________________________
 
 
 **Retrospective**  
-pass by value/ref lion example before lecture exaples
+  - H)
+  - L) pass by value/ref lion example before lecture exaples
