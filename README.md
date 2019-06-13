@@ -164,7 +164,7 @@ _Class_ - is the blueprint/ model
   - Every class **is a type**  
   - _Types_- numbers, text, booleans **user defined data types**  
 
-  _Instantiate(create an instance of)_ - is to actually build the model  
+  _Instantiate(create an instance of)_ - is to actually build the model, the **Object**  
 
 _Properties, getters, and setters_  
 
@@ -209,6 +209,15 @@ _Garbage collection_
   _Method Overloading_ - same name different params, for code reuse  
 _________________________________________________
 **_6/12/2019_**  
+
+_Interfaces_
+
+_Interface_ is a contract  
+  - defines a set of methods by any class/ lives up to it..
+  - does not **implement**  
+  - interfaces help define, in a reusable, portable way,  the public interface of a class
+  - good way to crate specs for components to "plug into" a system.
+  - interfaces _cannot_ have properties
 
 
 _________________________________________________
