@@ -212,7 +212,7 @@ _________________________________________________
 
 _Interfaces_
 
-_Interface_ is a contract  
+_Interface_ is a contract, losely ... 
   - defines a set of methods by any class/ lives up to it..
   - does not **implement**  
   - interfaces help define, in a reusable, portable way,  the public interface of a class
@@ -223,6 +223,36 @@ _Interface_ is a contract
 _________________________________________________
 **_6/13/2019_**  
 
+_Composition_  
+  - Has-a relationship
+  - objects made of objects
+
+_Inheritance_  
+  - Is-a relationship
+  - protected
+  - all java classes extends Object class by default
+  -**Base class**
+    - parent class/ super class  
+  - **Derived Class**
+    - child, subclass, extended class
+    - inherits meths and props of superclass
+    - Specializes the base class
+    - Adds more meth and propls
+    - Overriding provides a differnt implementation of properties and methods  
+
+_Overriding methods_
+  - method signatre must be the same
+
+_Constructors and Inheritance_  
+  - use **super** to access super class from the derived clss.  
+  - super must be the first statement in the code block  
+
+_Protected_ - only code in that class and children classes have access to its protected properties.
+  - 
+
+_Abstract_ - has at least one method that will not be implemented.
+
+Standup-codebat solution vs mine. .max() & other array functions
 _________________________________________________
 **_6/14/2019_**  
 
