@@ -11,12 +11,25 @@ public class Home {
         this.address = address;
     }
     private Patio patio;
-
+    private Kitchen kitchen;
     private Bathroom bathroom;
     private Basement basement;
 
+    public Kitchen getKitchen() {
+        return kitchen;
+    }
 
+    public void setKitchen(Kitchen kitchen) {
+        this.kitchen = kitchen;
+    }
 
+    public Basement getBasement() {
+        return basement;
+    }
+
+    public void setBasement(Basement basement) {
+        this.basement = basement;
+    }
 
     public String getOwner() {
         return owner;

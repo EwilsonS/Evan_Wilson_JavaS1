@@ -4,8 +4,9 @@ public class Basement {
     private boolean centralAc;
     private boolean finished;
 
-    Basement(){
-
+    public Basement(boolean centralAc, boolean finished) {
+        this.centralAc = centralAc;
+        this.finished = finished;
     }
 
     public boolean isCentralAc() {

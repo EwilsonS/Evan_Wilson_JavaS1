@@ -4,6 +4,11 @@ public class Patio {
     private Boolean covered;
     private int[] dimentions;
 
+    public Patio(Boolean covered, int[] dimentions) {
+        this.covered = covered;
+        this.dimentions = dimentions;
+    }
+
     public Boolean getCovered() {
         return covered;
     }
