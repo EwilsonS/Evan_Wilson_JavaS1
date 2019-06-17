@@ -256,8 +256,13 @@ Standup-codebat solution vs mine. .max() & other array functions
 _________________________________________________
 **_6/14/2019_**  
 
+_Polymorphism_ 
+  - many formed
+  - derived types are base types
+  - The type will determine what methods are available.
+  - recall the "is-A' relationship. A developer is not always a team Lead but a TL is always a dev.
 
 
 **Retrospective**  
   - H)
-  - L) pass by value/ref lion example before lecture exaples
+  - L) pass by value/ref lion example before lecture exaples, architect-tl
