@@ -266,3 +266,73 @@ _Polymorphism_
 **Retrospective**  
   - H)
   - L) pass by value/ref lion example before lecture exaples, architect-tl
+
+  _________________________________________________
+**_6/17/2019_**  
+_Java Collections_  
+  -  Interface
+  - Collections dont work with primitives
+
+_Iterators_  
+  - Object that allows us to access each element in a collection
+  - Two methods  
+    - hasNext()
+    - next()
+    - (remove()-_optional_)
+  - no order  
+
+_List_ - interface  
+    - array list implements list  
+
+_Java Gernerics_
+  - 
+
+_Wrapper classes_
+  - privitive tyoes have this. 
+    - int => Integer
+    - boolean => Boolean
+    - char => Character
+    - ...  
+
+_Map_ 
+  - key value pairs
+  - only one null key
+  - set willnot have duplicates
+
+
+`.size()` - gets number of elements  
+`.add()` - 
+`.get()` - 
+`.clear()`- 
+
+
+
+
+
+
+
+_________________________________________________
+**_6/18/2019_**  
+
+
+
+
+_________________________________________________
+**_6/19/2019_**  
+
+
+
+
+_________________________________________________
+**_6/20/2019_**  
+
+
+
+_________________________________________________
+**_6/21/2019_**  
+
+
+
+**Retrospective**  
+  - H) 
+  - L) Need examples before definitions, then examples again;.
