@@ -305,16 +305,23 @@ _Map_
 `.get()` - 
 `.clear()`- 
 
-
-
-
-
-
-
 _________________________________________________
 **_6/18/2019_**  
+_Exceptions_
+  - Checked  
+    -  something we catch or specify that our code may throw an error
+  - unchecked  
+    - Erors we cant or dont want ot recover from
+    - We do not have to catach jor specify these
+`try`-code that might throw an exception  
+`catch`- catch err and do domething (message/ recover)  
+`finally`- run come code anyway  
 
+`throws IOException` or `throws Exception`
 
+Stack catches by most specific on top  
+
+Structure data: CSV XML JSON  
 
 
 _________________________________________________
