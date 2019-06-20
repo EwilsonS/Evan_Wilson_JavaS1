@@ -270,7 +270,7 @@ _Polymorphism_
   _________________________________________________
 **_6/17/2019_**  
 _Java Collections_  
-  -  Interface
+  - Interface
   - Collections dont work with primitives
 
 _Iterators_  
@@ -327,12 +327,56 @@ Structure data: CSV XML JSON
 _________________________________________________
 **_6/19/2019_**  
 
+_Lambdas and Streams_
+
+_Streams and aggregate ops_
+  - Introduces in Java 8
+  - Two types  
+    - Intermediate:  accepts a srteam and produces a stream
+    - Terminal: produces a non-stream result
+  - Lambdas introduce functional programming to Java  
+  - WHen combined, provides great options for processing collections of data
+
+_Pipeline_
+  - sequence of aggregate ops
+  - consists of:
+    - source of data (collections, for example)
+    - Zreo of more intermediate aggregate ops
+    - One terminal operation
+  - Complex processing of a group of objects in a collection
+
+_Loops/iterators vs Streams & aggregate ops_
+  - loops work on objects directly from the collection, agg ops word on objs form the stream
+  - 
+  - the params for agg ops are lamdas expression
+
+_Lambdas_
+  - Allow us to pass methods as params to define functionality on hte fly
+
+_Aggregate operations_
+  - filter - intermediate op the filters the obj in a stream
+  - forEach - 
+  - collect - returns a collection of objs 
+  - average - returns an ooptional double
+  - mapToXxxx - 
+  - getAs - 
+  - max 
+
+
+
 
 
 
 _________________________________________________
 **_6/20/2019_**  
 
+stand up -
+  reverse array to get the first instance of a duplicate element
+  then subtract that index from original array.size() to get the last
+  instance of that element's index.
+  List<Integer> tenRandomsCopy = new ArrayList<>(tenRandoms);
+  Collections.reverse(tenRandomsCopy);
+                
 
 
 _________________________________________________
