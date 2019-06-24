@@ -397,7 +397,7 @@ Structured data lesson- Would have been helpful to see code first. Then instruct
 
   _________________________________________________
 **_6/24/2019_**  
-standup- using casting to change double to int with math.pow  
+standup- using casting to change double to int with math.pow
 
 _Web appliactions and web services_
   - 
@@ -448,4 +448,9 @@ _REST_
       Req Body: NONE
       Res body: NONE
 ```
-  
+
+_________________________________________________
+**_6/25/2019_**  
+
+_Cognizant questions_
+  - 
