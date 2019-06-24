@@ -230,7 +230,7 @@ _Composition_
 _Inheritance_  
   - Is-a relationship
   - protected
-  - all java classes extends Object class by default
+  - all java classes extends Object class by default  
   -**Base class**
     - parent class/ super class  
   - **Derived Class**
@@ -245,8 +245,7 @@ _Overriding methods_
 
 _Constructors and Inheritance_  
   - use **super** to access super class from the derived clss.  
-  - super must be the first statement in the code block  
-
+  - super must be the first statement in the code block
 _Protected_ - only code in that class and children classes have access to its protected properties.
   - 
 
@@ -297,7 +296,7 @@ _Wrapper classes_
 _Map_ 
   - key value pairs
   - only one null key
-  - set willnot have duplicates
+  - Set will not have duplicates
 
 
 `.size()` - gets number of elements  
@@ -305,7 +304,7 @@ _Map_
 `.get()` - 
 `.clear()`- 
 
-_________________________________________________
+____________________________________ _____________
 **_6/18/2019_**  
 _Exceptions_
   - Checked  
@@ -330,7 +329,7 @@ _________________________________________________
 _Lambdas and Streams_
 
 _Streams and aggregate ops_
-  - Introduces in Java 8
+  - Introduced in Java 8
   - Two types  
     - Intermediate:  accepts a srteam and produces a stream
     - Terminal: produces a non-stream result
@@ -382,8 +381,19 @@ stand up -
 _________________________________________________
 **_6/21/2019_**  
 
+Consider list vs set vs map
+17 lines per method
+
+carslist app discussion - always ask why this?
+
+Structured data lesson- Would have been helpful to see code first. Then instructor gives quick description (1 minute or so). No questions answred at this time. Then begin lesson. 
 
 
 **Retrospective**  
   - H) 
   - L) Need examples before definitions, then examples again;.
+
+  _________________________________________________
+**_6/24/2019_**  
+standup- using casting to change double to int with math.pow
+
