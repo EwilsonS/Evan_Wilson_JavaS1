@@ -421,28 +421,31 @@ _REST_
   In class API practice  
   create post /api/addRecord
  ~~~~ 
-      Method: Post 
-      URI: /inventory
-      Req Body: JSON of created rcord
-      Res body: NONE 
+  Method: Post 
+  URI: /inventory
+  Req Body: JSON of created rcord
+  Res body: NONE 
   ~~~~
 
-  retrieve get /api/records?name=evan
-    Method: Get
+  retrieve /api/records?name=evan
+```
+      Method: Get
       URI: /inventory
       Req Body: JSON of created rcord
       Res body: NONE
-
+```
   update 
+```  
       Method: Put
       URI: /inventory{id}
       Req Body: JSON of created rcord
       Res body: JSON returned
-
+```
   delete
+```  
       Method: DELETE
       URI: /inventory{id}
       Req Body: NONE
       Res body: NONE
-
+```
   
