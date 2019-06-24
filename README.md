@@ -451,5 +451,9 @@ _REST_
 _________________________________________________
 **_6/25/2019_**  
 
+Standup - prepare for code review, revisited Abstract classes  
 _Cognizant questions_
-  - 
+  - pair programming
+  - tdd
+  - agile
+  - Company wide goals for employment.
