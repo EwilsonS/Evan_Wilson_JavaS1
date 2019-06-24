@@ -231,7 +231,7 @@ _Inheritance_
   - Is-a relationship
   - protected
   - all java classes extends Object class by default  
-  -**Base class**
+  - **Base class**
     - parent class/ super class  
   - **Derived Class**
     - child, subclass, extended class
@@ -246,7 +246,7 @@ _Overriding methods_
 _Constructors and Inheritance_  
   - use **super** to access super class from the derived clss.  
   - super must be the first statement in the code block
-  
+
 _Protected_ - 
   - only code in that class and children classes have access to its protected properties.
 
