@@ -245,9 +245,10 @@ _Overriding methods_
 
 _Constructors and Inheritance_  
   - use **super** to access super class from the derived clss.  
-  - super must be the first statement in the code block  
-_Protected_ - only code in that class and children classes have access to its protected properties.
-  - 
+  - super must be the first statement in the code block
+  
+_Protected_ - 
+  - only code in that class and children classes have access to its protected properties.
 
 _Abstract_ - has at least one method that will not be implemented.
 
