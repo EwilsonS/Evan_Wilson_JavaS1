@@ -420,10 +420,12 @@ _REST_
 
   In class API practice  
   create post /api/addRecord
-  ``` Method: Post ```
-  ``` URI: /inventory```
+ ~~~~ 
+      Method: Post 
+      URI: /inventory
       Req Body: JSON of created rcord
-      Res body: NONE ```
+      Res body: NONE 
+  ~~~~
 
   retrieve get /api/records?name=evan
     Method: Get
