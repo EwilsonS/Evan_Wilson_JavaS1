@@ -400,7 +400,6 @@ Structured data lesson- Would have been helpful to see code first. Then instruct
 standup- using casting to change double to int with math.pow
 
 _Web appliactions and web services_
-  - 
 
 _HTTP_
   - Request - Get Post Put or Delete
