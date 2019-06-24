@@ -251,6 +251,7 @@ _Protected_ -
   - only code in that class and children classes have access to its protected properties.
 
 _Abstract_ - has at least one method that will not be implemented.
+  - all child classes must use this method but in any way they want.Abstract methods define access modifier, void, paramas. When abstract is implemented, the methjod signature must match.
 
 Standup-codebat solution vs mine. .max() & other array functions
 _________________________________________________
@@ -311,7 +312,7 @@ _Exceptions_
   - Checked  
     -  something we catch or specify that our code may throw an error
   - unchecked  
-    - Erors we cant or dont want ot recover from
+    - Errors we cant or dont want ot recover from
     - We do not have to catach jor specify these
 `try`-code that might throw an exception  
 `catch`- catch err and do domething (message/ recover)  
@@ -396,5 +397,50 @@ Structured data lesson- Would have been helpful to see code first. Then instruct
 
   _________________________________________________
 **_6/24/2019_**  
-standup- using casting to change double to int with math.pow
+standup- using casting to change double to int with math.pow  
 
+_Web appliactions and web services_
+  - 
+
+_HTTP_
+  - Request - Get Post Put or Delete
+  - Response- Status line, Header, Body (optional)
+    - status codes
+      - `100` informational
+      - `200` success
+      - `300` redirection
+      - `400` client error (wrong page)
+      - `500` server error
+
+_REST_
+  - Architecture style
+  - buult on top of http
+  - revolves around the concept of resources (data)
+  - data xfer via http media types (usually JSON or XML)
+
+  In class API practice  
+  create post /api/addRecord
+  ``` Method: Post ```
+  ``` URI: /inventory```
+      Req Body: JSON of created rcord
+      Res body: NONE ```
+
+  retrieve get /api/records?name=evan
+    Method: Get
+      URI: /inventory
+      Req Body: JSON of created rcord
+      Res body: NONE
+
+  update 
+      Method: Put
+      URI: /inventory{id}
+      Req Body: JSON of created rcord
+      Res body: JSON returned
+
+  delete
+      Method: DELETE
+      URI: /inventory{id}
+      Req Body: NONE
+      Res body: NONE
+
+  
