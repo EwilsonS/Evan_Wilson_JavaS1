@@ -419,12 +419,12 @@ _REST_
 
   In class API practice  
   create post /api/addRecord
- ~~~~ 
+``` 
   Method: Post 
   URI: /inventory
   Req Body: JSON of created rcord
   Res body: NONE 
-  ~~~~
+ ```
 
   retrieve /api/records?name=evan
 ```
@@ -450,10 +450,15 @@ _REST_
 
 _________________________________________________
 **_6/25/2019_**  
-
-Standup - prepare for code review, revisited Abstract classes  
+```
+Standup - prepare for code review, revisited abstract, reviewed routes from earlier projects 
+``` 
 _Cognizant questions_
   - pair programming
   - tdd
   - agile
-  - Company wide goals for employment.
+  - Company wide goals for employment? progress? 2018 article
+  - Diversity
+  - Junior engineer career path and role starting out
+  - employee development
+  - What kind of success have you had with non traditional employees
