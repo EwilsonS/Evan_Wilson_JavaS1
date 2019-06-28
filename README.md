@@ -542,8 +542,8 @@ _DTO _
 _@Valid_- 
 
 _________________________________________________
-**_6/27/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
-<a name="error"></a>
+**_6/27/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+<a name="error"></a>  
 _Error Handling_
   - @RestControllerAdvice - class level
   - @ExceptionHandler - method level
@@ -552,4 +552,3 @@ _Error Handling_
 `application/vnd.error` - one of many formats to use for errors(hateos supports this)
 
 _Web Interfaces_
-  - 
