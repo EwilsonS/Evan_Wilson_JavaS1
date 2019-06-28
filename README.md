@@ -1,6 +1,13 @@
+<a name="top"></a>
+
 ### Keywords
-[`Iteration planning`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#Iteration)
-[`Iteration planning`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#Iteration)
+[`Iteration planning`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#iteration)
+[`Loops`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#loops)
+[`Composition`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#composition)
+[`Constructors`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#constructors)
+[`Memory`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#constructors)
+[`Error Handling`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#error)
+[`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
 
 # [Evan Wilson](https://ewilsons.github.io/)
 
@@ -8,7 +15,7 @@
 
 ## Class Notes
 _________________________________________________
-**_Prework_**  
+**_Prework_**  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
  **Terms**  
  - port binding
@@ -24,7 +31,7 @@ _________________________________________________
 `git branch -D name-of-branch`  
 
 _________________________________________________
-**_6/3/2019_**  
+**_6/3/2019_**  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
 One week redos for summatives  
 JRE- runtime environment  
@@ -38,9 +45,9 @@ IDE-integrated development environment
   - Spring(most popular)
 
 _________________________________________________
- **_6/4/2019_**
+ **_6/4/2019_**  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
  
- <a name = "Iteration"></a>
+ <a name="Iteration"></a>
 _Iteration Planning_
   - Pivotal Tracker
   - Kanban
@@ -81,7 +88,8 @@ _Iteration Planning_
 **`comment`, `debug`, `comment`, `debug`, `comment`, `debug`**
 
 _________________________________________________
-  **_6/5/2019_**  
+  **_6/5/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+  <a name="loops"></a>
   _Booleans expressions_ 
   - Relational
     - ==, !=, >, <, <=, >=
@@ -97,7 +105,7 @@ _Loops_
 `break` - exits loop
 
 _________________________________________________
-  **_6/6/2019_**  
+  **_6/6/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
   `Debug` - Debugger is an essential tool.  
   `Dry` - Dont repeat code.  
@@ -113,7 +121,7 @@ _________________________________________________
   - return value, one or more prams 
 
 _________________________________________________
-  **_6/7/2019_**
+  **_6/7/2019_**  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
   Data structues  
   Arrays - fixed number, same data type for _elements_ in the array.
@@ -130,7 +138,8 @@ Agile  led by scrum master
   - H) file structure tips were helpful, forced pair programming
   - L) slow pace, inconsistent tests  
 _________________________________________________
-  **_6/10/2019_**  
+  **_6/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+  <a name="composition"></a>
 _Java objects_  
 Key concepts  
   - Composition - Object of objects
@@ -162,7 +171,8 @@ Key concepts
   Delegation - Private implementation will delegate the work to existing classes 
 
 _________________________________________________
-**_6/11/2019_**  
+**_6/11/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+<a name="contructors">
 _Classes & Objects pt2_  
 
 _Class_ - is the blueprint/ model  
@@ -213,7 +223,7 @@ _Garbage collection_
 
   _Method Overloading_ - same name different params, for code reuse  
 _________________________________________________
-**_6/12/2019_**  
+**_6/12/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
 _Interfaces_
 
@@ -226,7 +236,7 @@ _Interface_ is a contract, losely ...
 
 
 _________________________________________________
-**_6/13/2019_**  
+**_6/13/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
 _Composition_  
   - Has-a relationship
@@ -260,7 +270,7 @@ _Abstract_ - has at least one method that will not be implemented.
 
 Standup-codebat solution vs mine. .max() & other array functions
 _________________________________________________
-**_6/14/2019_**  
+**_6/14/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
 _Polymorphism_ 
   - many formed
@@ -274,7 +284,7 @@ _Polymorphism_
   - L) pass by value/ref lion example before lecture exaples, architect-tl
 
   _________________________________________________
-**_6/17/2019_**  
+**_6/17/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 _Java Collections_  
   - Interface
   - Collections dont work with primitives
@@ -311,8 +321,8 @@ _Map_
 `.get()` - 
 `.clear()`- 
 
-____________________________________ _____________
-**_6/18/2019_**  
+_________________________________________________
+**_6/18/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 _Exceptions_
   - Checked  
     -  something we catch or specify that our code may throw an error
@@ -331,7 +341,7 @@ Structure data: CSV XML JSON
 
 
 _________________________________________________
-**_6/19/2019_**  
+**_6/19/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
 _Lambdas and Streams_
 
@@ -374,7 +384,7 @@ _Aggregate operations_
 
 
 _________________________________________________
-**_6/20/2019_**  
+**_6/20/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
 stand up -
   reverse array to get the first instance of a duplicate element
@@ -386,7 +396,7 @@ stand up -
 
 
 _________________________________________________
-**_6/21/2019_**  
+**_6/21/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
 Consider list vs set vs map
 17 lines per method
@@ -401,7 +411,7 @@ Structured data lesson- Would have been helpful to see code first. Then instruct
   - L) Need examples before definitions, then examples again;.
 
   _________________________________________________
-**_6/24/2019_**  
+**_6/24/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 standup- using casting to change double to int with math.pow
 
 _Web appliactions and web services_
@@ -454,7 +464,7 @@ _REST_
 ```
 
 _________________________________________________
-**_6/25/2019_**  
+**_6/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 ```
 Standup - prepare for code review, revisited abstract, reviewed routes from earlier projects 
 ``` 
@@ -484,7 +494,7 @@ _SI(spring initializr)_
 _Swagger(openapi)_
 
 _________________________________________________
-**_6/26/2019_**  
+**_6/26/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name ="mvc"></a>
 
 _Servlet Containers_
   - Java containers that run jaba-based web apps
@@ -524,8 +534,8 @@ _DTO _
 _@Valid_- 
 
 _________________________________________________
-**_6/27/2019_**  
-
+**_6/27/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="error"></a>
 _Error Handling_
   - @RestControllerAdvice - class level
   - @ExceptionHandler - method level
