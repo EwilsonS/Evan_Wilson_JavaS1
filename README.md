@@ -37,8 +37,9 @@ IDE-integrated development environment
 
 _________________________________________________
  **_6/4/2019_**
-
-_Iteration Planning_<a name = "Iteration"></a>
+ 
+ <a name = "Iteration"></a>
+_Iteration Planning_
   - Pivotal Tracker
   - Kanban
   - Jira
