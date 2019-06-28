@@ -306,8 +306,7 @@ _Iterators_
 _List_ - interface  
     - array list implements list  
 
-_Java Gernerics_
-  - 
+_Java Generics_
 
 _Wrapper classes_
   - privitive tyoes have this. 
