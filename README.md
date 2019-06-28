@@ -6,6 +6,11 @@
 [`Composition`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#composition)
 [`Constructors`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#constructors)
 [`Memory`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#constructors)
+[`Polymorphism`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#poly)
+[`Collections`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#collections)
+[`Exceptions`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#exceptions)
+[`Lambdas`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#lambdas)
+[`Web Services`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#service)
 [`Error Handling`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#error)
 [`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
 
@@ -172,7 +177,7 @@ Key concepts
 
 _________________________________________________
 **_6/11/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
-<a name="contructors">
+<a name="constructors"></a>
 _Classes & Objects pt2_  
 
 _Class_ - is the blueprint/ model  
@@ -183,7 +188,7 @@ _Class_ - is the blueprint/ model
 
 _Properties, getters, and setters_  
 
-_Contructors_- called when you want to instantiate a class  
+_Constructors_- called when you want to instantiate a class  
   - used to initialize(set the internal state) of the object.
   - constructor must have the same name as the class that contains it.
   - Does not have a return type, not even void  
@@ -223,7 +228,7 @@ _Garbage collection_
 
   _Method Overloading_ - same name different params, for code reuse  
 _________________________________________________
-**_6/12/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+**_6/12/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name="interface"></a>
 
 _Interfaces_
 
@@ -270,7 +275,7 @@ _Abstract_ - has at least one method that will not be implemented.
 
 Standup-codebat solution vs mine. .max() & other array functions
 _________________________________________________
-**_6/14/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+**_6/14/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name="poly"></a>
 
 _Polymorphism_ 
   - many formed
@@ -284,7 +289,8 @@ _Polymorphism_
   - L) pass by value/ref lion example before lecture exaples, architect-tl
 
   _________________________________________________
-**_6/17/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+**_6/17/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) <a name="collections"></a> 
+
 _Java Collections_  
   - Interface
   - Collections dont work with primitives
@@ -321,8 +327,12 @@ _Map_
 `.get()` - 
 `.clear()`- 
 
+Consider list vs set vs map
+
+
 _________________________________________________
-**_6/18/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+**_6/18/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) <a name="exceptions"></a> 
+
 _Exceptions_
   - Checked  
     -  something we catch or specify that our code may throw an error
@@ -341,7 +351,7 @@ Structure data: CSV XML JSON
 
 
 _________________________________________________
-**_6/19/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+**_6/19/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name="lambdas"></a>
 
 _Lambdas and Streams_
 
@@ -398,7 +408,6 @@ stand up -
 _________________________________________________
 **_6/21/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
-Consider list vs set vs map
 17 lines per method
 
 carslist app discussion - always ask why this?
@@ -411,7 +420,7 @@ Structured data lesson- Would have been helpful to see code first. Then instruct
   - L) Need examples before definitions, then examples again;.
 
   _________________________________________________
-**_6/24/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+**_6/24/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name="service">
 standup- using casting to change double to int with math.pow
 
 _Web appliactions and web services_
