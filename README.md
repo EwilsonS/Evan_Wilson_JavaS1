@@ -1,3 +1,5 @@
+[Iteration planning](#)
+
 # [Evan Wilson](https://ewilsons.github.io/)
 
 > "They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk  
@@ -36,7 +38,7 @@ IDE-integrated development environment
   _________________________________________________
   **_6/4/2019_**
 
-  Iteration Planning  
+######Iteration Planning  
   - Pivotal Tracker
   - Kanban
   - Jira
@@ -430,8 +432,8 @@ _REST_
 ```
       Method: Get
       URI: /inventory
-      Req Body: JSON of created rcord
-      Res body: NONE
+      Req Body: None
+      Res body: Json returned
 ```
   update 
 ```  
@@ -445,7 +447,7 @@ _REST_
       Method: DELETE
       URI: /inventory{id}
       Req Body: NONE
-      Res body: NONE
+      Res body: NONE 
 ```
 
 _________________________________________________
@@ -453,13 +455,80 @@ _________________________________________________
 ```
 Standup - prepare for code review, revisited abstract, reviewed routes from earlier projects 
 ``` 
-_Cognizant questions_
-  - pair programming
-  - tdd
-  - agile
+_Cognizant Q/A_  -Sharek and Devin
+  - `pair programming`
+  - `tdd`
+  - `xp` 
+  - `dev ops`- ownership -> full cylce
+  - goals me-team-company 
+  - `agile`
   - Company wide goals for employment? progress? 2018 article
   - Diversity
   - Junior engineer career path and role starting out
   - employee development
   - What kind of success have you had with non traditional employees
   - 193 fortune 500
+
+_Spring, Spring Boot & Spring Initializer_
+  - Makes Java lightweight and easily configurable
+  - cmoparable to express in terms of connectiong the dots and making reasonable config assuptions  
+
+_SI(spring initializr)_
+  - app and sever all in one(Tomcat)
+  - start.spring.io - sets up project
+  - tomcat -servlet to 
+
+_Swagger(openapi)_
+
+_________________________________________________
+**_6/26/2019_**  
+
+_Servlet Containers_
+  - Java containers that run jaba-based web apps
+  - Apps **implements** the Java Servlet Specification
+    - defines howit shoulf act and what features it should have
+  - Routes HTTP req to Java components to `servlets`
+
+_Tomcat_ - refernce implemetaion of the servlet container
+  - Implements the Servlet specification
+  - components 
+    - `Catalina` - servlet container
+    - `Coyote` - 
+    - `Jasper` - provides support for JavaPages
+
+_Servlet API_
+  - web service - collection of requests, requests routing and servlets
+  - Spring MVC implements front controller patterns
+
+_Front controller patters_(as it pertains to spring mvc)
+  - `Dispatcher Servlet` (handles all incoming http reqs) routes to the controller. 
+  - the controller has the code and executes business logic
+  - the respose data is put into models
+  - Web services `do not` have a server-side view component. the client will handle the view.
+  - web applications `do` have a view component
+
+_MVC Patterns_
+
+_Spring Rest Controller_
+  - Dispatcher servlet routes requests to Rest controller
+  - @RestController - class level annotation
+  - @RequestMapping - method level, 2 params(value = "/endpoint", Method = reqquestmeth Get..)
+  - @ResponseStatus - method level
+  - @PathVariable - 
+
+_DTO _
+
+_@Valid_- 
+
+_________________________________________________
+**_6/27/2019_**  
+
+_Error Handling_
+  - @RestControllerAdvice - class level
+  - @ExceptionHandler - method level
+  - Aspect oriented programming(AOP)- 
+
+`application/vnd.error` - one of many formats to use for errors(hateos supports this)
+
+_Web Interfaces_
+  - 
