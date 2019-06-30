@@ -278,11 +278,11 @@ _________________________________________________
 **_6/14/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name="poly"></a>
 
 _Polymorphism_ 
+  - **Polymorphism** is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. `Any Java object that can pass more than one IS-A test is considered to be polymorphic.`
   - many formed
   - derived types are base types
   - The type will determine what methods are available.
   - recall the "is-A' relationship. A developer is not always a team Lead but a TL is always a dev.
-
 
 **Retrospective**  
   - H)
@@ -313,7 +313,6 @@ _Wrapper classes_
     - int => Integer
     - boolean => Boolean
     - char => Character
-    - ...  
 
 _Map_ 
   - key value pairs
@@ -325,6 +324,7 @@ _Map_
 `.add()` - 
 `.get()` - 
 `.clear()`- 
+`.containsKey()` - use this instead of .equals(null)
 
 Consider list vs set vs map
 
@@ -552,3 +552,14 @@ _Error Handling_
 `application/vnd.error` - one of many formats to use for errors(hateos supports this)
 
 _Web Interfaces_
+
+
+_________________________________________________
+**_6/28/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+
+M2 summative review
+```
+- Improve Java Talk
+- Use constructor for data hiding/ consistency
+-  
+```
