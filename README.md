@@ -13,6 +13,8 @@
 [`Web Services`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#service)
 [`Error Handling`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#error)
 [`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
+[`Databases`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#data)
+
 
 # [Evan Wilson](https://ewilsons.github.io/)
 
@@ -37,8 +39,7 @@ _________________________________________________
 
 _________________________________________________
 **_6/3/2019_**  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
-
-One week redos for summatives  
+  
 JRE- runtime environment  
 JDK-development kit  
 IDE-integrated development environment  
@@ -563,3 +564,35 @@ M2 summative review
 - Use constructor for data hiding/ consistency
 -  
 ```
+
+_________________________________________________
+**_6/28/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="data"></a>
+
+_Relational Databases_  
+  - Entity - Table - thing we want to track (book) 
+    - `Tuple` - Row - instance of the entity(_The Bean Trees_)
+    - `Attibutes` - Column - describes the entity (isbn, author)  
+
+  - Data v Metadata  
+  
+  - Keys
+    - `Primary key` - natural or artificial(preferred). Uniquely identifies the tuple.
+    - `Foriegn Key` - used to facilitate relationships between 
+
+  - Types of relationships linking tables and entities together
+    - one to one
+    - one to many
+    - many to one
+    - many to 
+    
+Customer -id, 
+Order - price, carrier, product
+Product
+Category
+Payment
+Address
+Warehouse
+Seeller Inventory
+Trackikng
+Carrier
