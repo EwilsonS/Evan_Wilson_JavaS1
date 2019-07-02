@@ -638,7 +638,6 @@ _ACID_ - Atomicity, Consistiency, Isolation, Durability
   - `Durable` - Once a transacion is commited, it must reamin so
 
 _Indexes_ - Allows system to quiqckly find rows, even when data set is very large (admins can index commonly searched atributes for speed)
-  - 
 
 - '%a' values that end in 'a' 0 - many
 - 'a%' values that begin with 'a' 0 - many
