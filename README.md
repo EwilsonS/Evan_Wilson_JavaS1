@@ -14,6 +14,8 @@
 [`Error Handling`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#error)
 [`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
 [`Databases`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#data)
+[`Join`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#join)
+
 
 
 # [Evan Wilson](https://ewilsons.github.io/)
@@ -566,7 +568,7 @@ M2 summative review
 ```
 
 _________________________________________________
-**_6/28/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+**_7/01/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="data"></a>
 
 _Relational Databases_  
@@ -575,7 +577,7 @@ _Relational Databases_
     - `Attibutes` - Column - describes the entity (isbn, author)  
 
   - Data v Metadata  
-  
+
   - Keys
     - `Primary key` - natural or artificial(preferred). Uniquely identifies the tuple.
     - `Foriegn Key` - used to facilitate relationships between 
@@ -584,8 +586,8 @@ _Relational Databases_
     - one to one
     - one to many
     - many to one
-    - many to 
-    
+    - many to many - requires a **bridge table**
+```    
 Customer -id, 
 Order - price, carrier, product
 Product
@@ -596,3 +598,75 @@ Warehouse
 Seeller Inventory
 Trackikng
 Carrier
+```
+
+_Data Modeling_
+  - Be mindful of nameing
+  - GUI - globally unique identifier
+
+_Normalization_
+  - `Composite key` - several columns together used to uniquely idendify a tuple
+
+_Functional Dependency_
+  - The PK should be a FD to all of the columns
+  - 
+
+```
+1NF - Single PK if sufficient. no unnecessry combinations. single values for data(no commas). Physical address and mailing address as opposed to one address column with 2 address values
+2NF- Only after 1NF is achieved consider 2NF. Attributes should be fully dependent on the PK. see FD.
+3NF- After 2NF is achieved, consider 3NF. Cannot have a FD based on any columns
+4NF - not covered
+5NF - not covered
+```
+
+_________________________________________________
+**_7/02/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="join"></a>
+
+_Joins_
+  - `Inner Join` - Used when you expect a value on both tables of the join
+    - Only see results when there is a common value in **both** tables
+  - `Outer Join` - Used when rows are not expected in both tables of a join
+    - **Left Outer** (most used) - Every row in the first table and only values from the second when a match is found
+    - Right Outer - Opposite of right outer
+    - Full Outer - Shows all rows from both tables whether or not they have matching rows in an opposite table.
+
+_ACID_ - Atomicity, Consistiency, Isolation, Durability
+  - `Atomic` - RDBMS will guarantee that a **transaction** (group of statements) **commits** (all run together) or **rolls back** (not run at all).
+  - `Consistency` - Data entered does not break a any constraints
+  - `Isolated` - Control access to data, using locking, to keep two or more users from modifying data at the same time.
+  - `Durable` - Once a transacion is commited, it must reamin so
+
+_Indexes_ - Allows system to quiqckly find rows, even when data set is very large (admins can index commonly searched atributes for speed)
+  - 
+
+- '%a' values that end in 'a' 0 - many
+- 'a%' values that begin with 'a' 0 - many
+
+``` SQL 
+-- Let's find all the orders that had a shipping fee of between 6 and 8 dollars that were shipped to Peru or Poland
+SELECT * 
+FROM northwind.orders 
+WHERE shipping_fee 
+BETWEEN 6 and 8 
+AND ship_country 
+IN('Peru', 'Poland');
+
+--- Let's get the customer names and the names of the people that all the completed orders for Keith Lawrence were shipped to
+SELECT orders.ship_name, customers.first_name, customers.last_name 
+FROM northwind.orders 
+inner join northwind.employees 
+ON orders.employee_id = employees.id 
+inner join northwind.customers 
+ON orders.customer_id = customers.id 
+where employees.first_name = 'Keith' 
+and employees.last_name = 'Lawrence' 
+and orders.order_status = 'Complete';
+
+-- Delete
+delete from car_lot where make = 'bmw';
+
+-- keeps you from deleteing w/o a key
+SET SQL_SAFE_UPDATES = 0;
+
+```
