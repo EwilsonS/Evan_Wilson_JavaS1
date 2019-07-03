@@ -15,6 +15,8 @@
 [`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
 [`Databases`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#data)
 [`Join`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#join)
+[`JDBC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jdbc)
+
 
 
 
@@ -540,7 +542,7 @@ _Spring Rest Controller_
   - @ResponseStatus - method level
   - @PathVariable - 
 
-_DTO _
+_DTO _ - Object that carries data between processes
 
 _@Valid_- 
 
@@ -667,5 +669,43 @@ delete from car_lot where make = 'bmw';
  
 -- keeps you from deleteing w/o a key
 SET SQL_SAFE_UPDATES = 0;
+
+```
+
+_________________________________________________
+**_7/02/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="jdbc"></a>
+
+_JDBC Templates_
+  - Table is the class
+  - Row is the instance, tuple or object (same thing)
+  - columns are properties
+  - DTOs have only properties getters and setters  
+
+*note- primitice data types cannot be null*
+
+_TDD and Unit/Integration Tests_ - 
+  - Red Green Refactor
+  - integration testing inclused the db
+  - AAA pattern
+    - Arrange
+    - Act
+    - Assert  
+  - dependency injection - the container provides the instance of the object we are testing
+  - retruned Lists are never null when returned from DAO.
+
+*sql injection attack are prevented by jdbc template, alwasy use prepared statements*
+
+_annotations used so far_
+
+``` java
+@SpringBootTest
+@RunWith(SpringJUnit4ClassRunner.class)
+@Autowired
+@RestController
+@PathVariable
+@RequestMapper
+
+
 
 ```
