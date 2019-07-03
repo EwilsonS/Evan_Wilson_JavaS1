@@ -694,9 +694,10 @@ _TDD and Unit/Integration Tests_ -
   - dependency injection - the container provides the instance of the object we are testing
   - retruned Lists are never null when returned from DAO.
 
-*`sql injection` attack are prevented by jdbc template, alwasy use **prepared statements***
-
-`result set` - each returned row obj from the db.
+*`sql injection` attack are prevented by jdbc template, alwasy use **prepared statements***  
+`result set` - each returned row obj from the db.  
+`queryForObject` - method ot return exactly one result  
+`query` - method to return zero or more 
 
 _annotations used so far_
 
