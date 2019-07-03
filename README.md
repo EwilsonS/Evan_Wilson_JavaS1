@@ -694,7 +694,9 @@ _TDD and Unit/Integration Tests_ -
   - dependency injection - the container provides the instance of the object we are testing
   - retruned Lists are never null when returned from DAO.
 
-*sql injection attack are prevented by jdbc template, alwasy use prepared statements*
+*`sql injection` attack are prevented by jdbc template, alwasy use **prepared statements***
+
+`result set` - each returned row obj from the db.
 
 _annotations used so far_
 
@@ -705,7 +707,5 @@ _annotations used so far_
 @RestController
 @PathVariable
 @RequestMapper
-
-
 
 ```
