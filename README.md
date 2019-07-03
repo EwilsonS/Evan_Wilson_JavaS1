@@ -447,7 +447,7 @@ _REST_
 
   In class API practice  
   create post /api/addRecord
-``` 
+``` java
   Method: Post 
   URI: /inventory
   Req Body: JSON of created rcord
@@ -455,21 +455,21 @@ _REST_
  ```
 
   retrieve /api/records?name=evan
-```
+```java
       Method: Get
       URI: /inventory
       Req Body: None
       Res body: Json returned
 ```
   update 
-```  
+```  java
       Method: Put
       URI: /inventory{id}
       Req Body: JSON of created rcord
       Res body: JSON returned
 ```
   delete
-```  
+```  java
       Method: DELETE
       URI: /inventory{id}
       Req Body: NONE
@@ -478,9 +478,10 @@ _REST_
 
 _________________________________________________
 **_6/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
-```
+
 Standup - prepare for code review, revisited abstract, reviewed routes from earlier projects 
-``` 
+
+```
 _Cognizant Q/A_  -Sharek and Devin
   - `pair programming`
   - `tdd`
@@ -494,7 +495,7 @@ _Cognizant Q/A_  -Sharek and Devin
   - employee development
   - What kind of success have you had with non traditional employees
   - 193 fortune 500
-
+```
 _Spring, Spring Boot & Spring Initializer_
   - Makes Java lightweight and easily configurable
   - cmoparable to express in terms of connectiong the dots and making reasonable config assuptions  
@@ -565,8 +566,7 @@ _________________________________________________
 M2 summative review
 ```
 - Improve Java Talk
-- Use constructor for data hiding/ consistency
--  
+- Use constructor for data hiding/ consistency 
 ```
 
 _________________________________________________
@@ -629,7 +629,7 @@ _Joins_
   - `Inner Join` - Used when you expect a value on both tables of the join
     - Only see results when there is a common value in **both** tables
   - `Outer Join` - Used when rows are not expected in both tables of a join
-    - **Left Outer** (most used) - Every row in the first table and only values from the second when a match is found
+    - `**Left Outer**` (most used) - Every row in the first table and only values from the second when a match is found
     - Right Outer - Opposite of right outer
     - Full Outer - Shows all rows from both tables whether or not they have matching rows in an opposite table.
 
@@ -688,9 +688,9 @@ _TDD and Unit/Integration Tests_ -
   - Red Green Refactor
   - integration testing inclused the db
   - AAA pattern
-    - Arrange
-    - Act
-    - Assert  
+    - `Arrange`
+    - `Act`
+    - `Assert`  
   - dependency injection - the container provides the instance of the object we are testing
   - retruned Lists are never null when returned from DAO.
 
@@ -705,6 +705,7 @@ _annotations used so far_
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
 @Autowired
+@Repository
 @RestController
 @PathVariable
 @RequestMapper
