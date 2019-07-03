@@ -664,7 +664,7 @@ and orders.order_status = 'Complete';
 
 -- Delete
 delete from car_lot where make = 'bmw';
-
+ 
 -- keeps you from deleteing w/o a key
 SET SQL_SAFE_UPDATES = 0;
 
