@@ -5,11 +5,13 @@
 [`Loops`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#loops)
 [`Composition`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#composition)
 [`Constructors`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#constructors)
+[`Static`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#constructors)
 [`Memory`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#constructors)
 [`Polymorphism`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#poly)
 [`Collections`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#collections)
 [`Exceptions`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#exceptions)
-[`Lambdas`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#lambdas)
+[`Strems/Lambdas`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#lambdas)
+[`OpenCSV/Jckson`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#lambdas)
 [`Web Services`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#service)
 [`Error Handling`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#error)
 [`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
@@ -50,7 +52,7 @@ IDE-integrated development environment
   - Eclipse
   - NetBeans
   - IntelliJ Idea
-  J2EE libraries
+J2EE libraries
   - Jakarta (apache)
   - Spring(most popular)
 
@@ -90,28 +92,23 @@ _Iteration Planning_
   - Methods - **verbs, camelCase**
   - Variables **camelCase**
   - Classes - **PascalCase**  
-  _Expressions_ evaluate to a single value  
+  _Expressions_ evaluate to a single value   
 
-  _Scanner_ - used to get user input  
-  _Comments_ - /** JavaDoc Comments */  
-
-**`comment`, `debug`, `comment`, `debug`, `comment`, `debug`**
+**`comment`, `debug`, `repeat`**
 
 _________________________________________________
-  **_6/5/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
-  <a name="loops"></a>
-  _Booleans expressions_ 
-  - Relational
-    - ==, !=, >, <, <=, >=
-  - Conditional - &&, ||
+**_6/5/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
+<a name="loops"></a>
+
+_Boolean expressions_
+  - Relational - ==, !=, >, <, <=, >= 
+  - Conditional - &&, || 
 
 _Loops_
-- While/ Do While
-  - While- keep going until the condition is met be careful of infinite loops
- -  Do While- sets an ending condition
-
+- While- keep going until the condition is met be careful of infinite loops
+- Do While- sets an ending condition, runs at least once
 - For - define a stopping point.  
-`continue` - restarts loop
+`continue` - restarts loop  
 `break` - exits loop
 
 _________________________________________________
@@ -136,7 +133,7 @@ _________________________________________________
   Data structues  
   Arrays - fixed number, same data type for _elements_ in the array.
 
-  * convert num within a statement- sum/(double)len*witdh
+  * convert (cast) num within a statement- sum/(double)len*witdh
   
 Agile  led by scrum master
 - sprint
@@ -150,6 +147,7 @@ Agile  led by scrum master
 _________________________________________________
   **_6/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
   <a name="composition"></a>
+
 _Java objects_  
 Key concepts  
   - Composition - Object of objects
@@ -214,7 +212,7 @@ _Dot(.) Operator_
 _Instantiate_ - by using the "new" keyword  
   - JVM will store new instance in **heap** memory and gives a reference  
 
-_Stack Heap_  
+_Stack/ Heap_  
   - Stack memory only exists ifor the duration of the code block they are in  
   - Local primitive values live on the stack
   - The reference variable the point to the heap lives in the stack.  
@@ -226,10 +224,10 @@ _Garbage collection_
   - end a reference manually by setting **null**
   - referenced auto end when the method returns  
 
-  _Pass parameters by value & reference_
-    - value - copies value into another var, two completely diff variables that can be changed  
-    - ref - passes value of the reference  
-    - Java is a pass by value language
+ _Pass parameters by value & reference_  
+  - value - copies value into another var, two completely diff variables that can be changed  
+  - ref - passes value of the reference  
+  - Java is a pass by value language
 
   _Method Overloading_ - same name different params, for code reuse  
 _________________________________________________
@@ -345,7 +343,7 @@ _Exceptions_
     - We do not have to catach jor specify these
 `try`-code that might throw an exception  
 `catch`- catch err and do domething (message/ recover)  
-`finally`- run come code anyway  
+`finally`- run some code anyway  
 
 `throws IOException` or `throws Exception`
 
@@ -365,38 +363,126 @@ _Streams and aggregate ops_
     - Intermediate:  accepts a srteam and produces a stream
     - Terminal: produces a non-stream result
   - Lambdas introduce functional programming to Java  
-  - WHen combined, provides great options for processing collections of data
+  - When combined, provides great options for processing collections of data
 
 _Pipeline_
   - sequence of aggregate ops
   - consists of:
     - source of data (collections, for example)
-    - Zreo of more intermediate aggregate ops
+    - Zero or more intermediate aggregate ops
     - One terminal operation
   - Complex processing of a group of objects in a collection
 
 _Loops/iterators vs Streams & aggregate ops_
-  - loops work on objects directly from the collection, agg ops word on objs form the stream
-  - 
-  - the params for agg ops are lamdas expression
+  - loops work on objects directly from the collection 
+  - agg ops work on objs from the stream
+  - The params for agg ops are **lamdas expression**
 
 _Lambdas_
-  - Allow us to pass methods as params to define functionality on hte fly
+  - Allow us to pass methods as params to define functionality on the fly
 
 _Aggregate operations_
   - filter - intermediate op the filters the obj in a stream
   - forEach - 
   - collect - returns a collection of objs 
-  - average - returns an ooptional double
+  - average - returns an optional double
   - mapToXxxx - 
   - getAs - 
   - max 
 
+_Reading/Writing to/from file_
+```xml
+<!-- dependencies for csv, json and xml conversions -->
+    <dependencies>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.8.10</version>
+        </dependency>
+    </dependencies>
+```
+```java
+// Read from csv
+List<Motorcycle> bikes = 
+new CsvToBeanBuilder<Motorcycle>(new FileReader("motorcycles.csv")).withType(Motorcycle.class).build().parse();
+
+```
+```java
+List<Motorcycle> bikes = new CsvToBeanBuilder<Motorcycle>(new FileReader("motorcycles.csv")).withType(Motorcycle.class).build().parse();
+
+            // Print the information for all Suzuki motorcycles in inventory
+            String make = "Suzuki";
+            System.out.println("All " + make + " motorcycles in inventory: ");
+            bikes                                          // list type Motorcycle
+                    .stream()                              // use stream
+                    .filter(b -> b.getMake().equals(make)) // filter
+                    .forEach(bike -> {                     
+                        System.out.println("===============");
+                        System.out.println("Make: " + bike.getMake());
+                    });
+
+            // Print the information for all motorcycles that weigh less than 500 pounds
+            int weight = 500;
+            bikes
+                    .stream()
+                    .filter(bike -> bike.getWeight() < weight)
+                    .forEach(bike -> {
+                        System.out.println("===============");
+                        System.out.println("Make: " + bike.getMake());
+                    });
+
+            // Rather than printing out the matching motorcycles, let's put them into a list
+            List<Motorcycle> lightBikes =
+                    bikes
+                            .stream()
+                            .filter(bike -> bike.getWeight() < weight)
+                            .collect(Collectors.toList());
+
+            System.out.println(lightBikes.size());
+
+            // We can also group our motorcycles by Make.
+            Map<String, List<Motorcycle>> groupedBikes =
+                    bikes
+                            .stream()
+                            .collect(Collectors.groupingBy(b -> b.getMake()));
+
+            Set<String> keys = groupedBikes.keySet();
+            keys
+                    .stream()
+                    .forEach(System.out::println); // shorthand
+
+            // Print the average horsepower of the motorcycles in inventory
+            double avgHorsepower =
+                    bikes
+                            .stream()
+                            .mapToInt(b -> b.getHorsepower())
+                            .average()
+                            .getAsDouble();
+
+            System.out.println("Average horsepower is: " + avgHorsepower);
+
+            // Print the max HP of all bikes
+            int maxHorsePower =
+                    bikes
+                            .stream()
+                            .mapToInt(bike -> bike.getHorsepower())
+                            .max()
+                            .getAsInt();
+
+            System.out.println("Max horsepower: " + maxHorsePower);
 
 
-
-
-
+  ```
 _________________________________________________
 **_6/20/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 
@@ -537,12 +623,13 @@ _Front controller patters_(as it pertains to spring mvc)
 _MVC Patterns_
 
 _Spring Rest Controller_
-  - Dispatcher servlet routes requests to Rest controller
-  - @RestController - class level annotation
-  - @RequestMapping - method level, 2 params(value = "/endpoint", Method = reqquestmeth Get..)
-  - @ResponseStatus - method level
-  - @PathVariable - 
-
+  - `Dispatcher servlet` routes requests to Rest controller
+```java  
+@RestController - class_ level annotation
+@RequestMapping - method level, 2 params(value = "/endpoint", Method = RequestMethod Get..)
+@ResponseStatus - method level
+@PathVariable - 
+```
 _DTO _ - Object that carries data between processes
 
 _@Valid_- 
@@ -551,9 +638,12 @@ _________________________________________________
 **_6/27/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
 <a name="error"></a>  
 _Error Handling_
-  - @RestControllerAdvice - class level
-  - @ExceptionHandler - method level
-  - Aspect oriented programming(AOP)- 
+
+``` java
+@RestControllerAdvice - class_ level
+@ExceptionHandler - method level
+```
+Aspect oriented programming(AOP)
 
 `application/vnd.error` - one of many formats to use for errors(hateos supports this)
 
@@ -589,18 +679,7 @@ _Relational Databases_
     - one to many
     - many to one
     - many to many - requires a **bridge table**
-```    
-Customer -id, 
-Order - price, carrier, product
-Product
-Category
-Payment
-Address
-Warehouse
-Seeller Inventory
-Trackikng
-Carrier
-```
+
 
 _Data Modeling_
   - Be mindful of nameing
@@ -704,10 +783,35 @@ _annotations used so far_
 ``` java
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
-@Autowired
-@Repository
-@RestController
-@PathVariable
-@RequestMapper
+@Autowired - method level
+@Repository - class_ level 
+```
+
+Model with getters setters hashcode and equals methods
+``` java
+public class Artist {
+    // properties
+    private String name;
+    // getters
+    public String getName() {return name;}
+    //setters
+    public void setName(String name) {this.name = name;}
+    // equals, for testing
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Artist artist = (Artist) o;
+        return getId() == artist.getId() &&
+                Objects.equals(getName(), artist.getName()) &&
+                Objects.equals(getInstagram(), artist.getInstagram()) &&
+                Objects.equals(getTwitter(), artist.getTwitter());
+    }
+    // hashcode
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName(), getInstagram(), getTwitter());
+    }
+}
 
 ```
