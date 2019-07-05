@@ -778,13 +778,14 @@ _TDD and Unit/Integration Tests_ -
 `queryForObject` - method ot return exactly one result  
 `query` - method to return zero or more 
 
-_annotations used so far_
+_annotations_
 
 ``` java
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
 @Autowired - method level
-@Repository - class_ level 
+@Repository - class_ level annotation to identify current class_ as one connected to db
+@transactional
 ```
 
 Model with getters setters hashcode and equals methods
