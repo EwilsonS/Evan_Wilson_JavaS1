@@ -15,7 +15,7 @@
 [`Web Services`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#service)
 [`Error Handling`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#error)
 [`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
-[`Databases`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#data)
+[`Relational DBs(SQL)`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#data)
 [`Join`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#join)
 [`JDBC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jdbc)
 
@@ -527,7 +527,7 @@ _HTTP_
 
 _REST_
   - Architecture style
-  - buult on top of http
+  - built on top of http
   - revolves around the concept of resources (data)
   - data xfer via http media types (usually JSON or XML)
 
@@ -569,12 +569,12 @@ Standup - prepare for code review, revisited abstract, reviewed routes from earl
 
 ```
 _Cognizant Q/A_  -Sharek and Devin
-  - `pair programming`
-  - `tdd`
-  - `xp` 
-  - `dev ops`- ownership -> full cylce
+  - pair programming
+  - tdd
+  - xp 
+  - dev ops- ownership -> full cylce
   - goals me-team-company 
-  - `agile`
+  - agile
   - Company wide goals for employment? progress? 2018 article
   - Diversity
   - Junior engineer career path and role starting out
@@ -598,8 +598,8 @@ _________________________________________________
 
 _Servlet Containers_
   - Java containers that run jaba-based web apps
-  - Apps **implements** the Java Servlet Specification
-    - defines howit shoulf act and what features it should have
+  - Apps **implement** the Java Servlet Specification
+    - defines how it should act and what features it should have
   - Routes HTTP req to Java components to `servlets`
 
 _Tomcat_ - refernce implemetaion of the servlet container
