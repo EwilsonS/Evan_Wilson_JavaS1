@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  title: REST quote, word, 8ball
+  description: Service that allows CRUD operations for a 3 part word game
+  version: 0.0.1
+servers: 
+  - url: 'http://localhost:8080'
+    description: local dev server
+paths:
+  /quote:
+    get:
+      summary: Retrieves a random quote with its author
+      responses:
+        '200':
+          description: One random quote object has been returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Quote'
+  /word:
+    get:
+        summary: Retrieves a random word with its definition
+        responses:
+          '200':
+              description: One random word object will be returned
+              content:
+                application/json:
+                  schema:
+                    $ref: '#/components/schemas/Word'
+  /magic/:
+    post:
+        summary: Accepts a question in json format as request and returns an 8-ball-like random answer
+        requestBody:
+          required: true
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Answer'
+        responses:
+          '201':
+            description: successful post request in json form
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Answer'
+          '400':
+            description: invalid request syntax
+            
+components:
+  schemas:
+  
+    Quote:
+      properties:
+        author:
+          type: string
+        quote:
+          type: string
+          
+    Definition:
+      properties:
+        word:
+          type: string
+        definition:
+          type: string
+          
+    Answer:
+      properties:
+        question:
+          type: string
+        answer:
+          type: string
