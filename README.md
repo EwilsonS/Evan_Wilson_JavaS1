@@ -752,7 +752,7 @@ SET SQL_SAFE_UPDATES = 0;
 ```
 
 _________________________________________________
-**_7/02/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+**_7/03/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="jdbc"></a>
 
 _JDBC Templates_
@@ -761,7 +761,7 @@ _JDBC Templates_
   - columns are properties
   - DTOs have only properties getters and setters  
 
-*note- primitice data types cannot be null*
+*note- primitive data types cannot be null*
 
 _TDD and Unit/Integration Tests_ - 
   - Red Green Refactor
@@ -772,6 +772,7 @@ _TDD and Unit/Integration Tests_ -
     - `Assert`  
   - dependency injection - the container provides the instance of the object we are testing
   - retruned Lists are never null when returned from DAO.
+  - :: doulble colon - method reference
 
 *`sql injection` attack are prevented by jdbc template, alwasy use **prepared statements***  
 `result set` - each returned row obj from the db.  
@@ -815,4 +816,11 @@ public class Artist {
     }
 }
 
+```
+_________________________________________________
+**_7/08/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="jdbc"></a>
+
+```
+Standup- explored the @After annotation to see how my db was behaving
 ```
