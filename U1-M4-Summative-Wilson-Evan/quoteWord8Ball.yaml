@@ -26,7 +26,7 @@ paths:
               content:
                 application/json:
                   schema:
-                    $ref: '#/components/schemas/Word'
+                    $ref: '#/components/schemas/Definition'
   /magic/:
     post:
         summary: Accepts a question in json format as request and returns an 8-ball-like random answer

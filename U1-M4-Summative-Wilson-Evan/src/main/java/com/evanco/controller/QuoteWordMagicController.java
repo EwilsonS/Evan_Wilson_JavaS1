@@ -1,8 +1,8 @@
 package com.evanco.controller;
 
 import com.evanco.model.Answer;
+import com.evanco.model.Definition;
 import com.evanco.model.Quote;
-import com.evanco.model.Word;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -87,73 +87,73 @@ public class QuoteWordMagicController {
 
 
     /**
-     * GET random Word object from path: /word.
-     * Make method to create and return Word objects
+     * GET random Definition object from path: /word.
+     * Make method to create and return one random Definition object
      */
     @RequestMapping(value = "/word", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public Word getWordAndDefinition() {
+    public Definition getWordAndDefinition() {
 
-        // Instantiate 10 new Word objects
-        Word word1 = new Word();
-        word1.setWord("Serendipity");
-        word1.setDefinition("The chance occurrence of events in a beneficial way.");
+        // Instantiate 10 new Definition objects
+        Definition definition1 = new Definition();
+        definition1.setWord("Serendipity");
+        definition1.setDefinition("The chance occurrence of events in a beneficial way.");
 
-        Word word2 = new Word();
-        word2.setWord("Petrichor");
-        word2.setDefinition("The pleasant, earthy smell after rain.");
+        Definition definition2 = new Definition();
+        definition2.setWord("Petrichor");
+        definition2.setDefinition("The pleasant, earthy smell after rain.");
 
-        Word word3 = new Word();
-        word3.setWord("Supine");
-        word3.setDefinition("Lying face upwards");
+        Definition definition3 = new Definition();
+        definition3.setWord("Supine");
+        definition3.setDefinition("Lying face upwards");
 
-        Word word4 = new Word();
-        word4.setWord("Solitude");
-        word4.setDefinition("A state of seclusion or isolation.");
+        Definition definition4 = new Definition();
+        definition4.setWord("Solitude");
+        definition4.setDefinition("A state of seclusion or isolation.");
 
-        Word word5 = new Word();
-        word5.setWord("Aurora");
-        word5.setDefinition("The dawn early in the morning");
+        Definition definition5 = new Definition();
+        definition5.setWord("Aurora");
+        definition5.setDefinition("The dawn early in the morning");
 
-        Word word6 = new Word();
-        word6.setWord("Idyllic");
-        word6.setDefinition("Extremely happy, peaceful, or picturesque");
+        Definition definition6 = new Definition();
+        definition6.setWord("Idyllic");
+        definition6.setDefinition("Extremely happy, peaceful, or picturesque");
 
-        Word word7 = new Word();
-        word7.setWord("Clinomania");
-        word7.setDefinition("Excessive desire to stay in bed");
+        Definition definition7 = new Definition();
+        definition7.setWord("Clinomania");
+        definition7.setDefinition("Excessive desire to stay in bed");
 
-        Word word8 = new Word();
-        word8.setWord("Pluviophile");
-        word8.setDefinition("A love of rain; someone who finds joy and peace during rainy days");
+        Definition definition8 = new Definition();
+        definition8.setWord("Pluviophile");
+        definition8.setDefinition("A love of rain; someone who finds joy and peace during rainy days");
 
-        Word word9 = new Word();
-        word9.setWord("Euphoria");
-        word9.setDefinition("A feeling or state of intense excitement and happiness");
+        Definition definition9 = new Definition();
+        definition9.setWord("Euphoria");
+        definition9.setDefinition("A feeling or state of intense excitement and happiness");
 
-        Word word10 = new Word();
-        word10.setWord("Sequoia");
-        word10.setDefinition("A redwood tree");
+        Definition definition10 = new Definition();
+        definition10.setWord("Sequoia");
+        definition10.setDefinition("A redwood tree");
 
         // Add the new Quote objects to a List
-        List<Word> wordList = new ArrayList<>();
-        wordList.add(word1);
-        wordList.add(word2);
-        wordList.add(word3);
-        wordList.add(word4);
-        wordList.add(word5);
-        wordList.add(word6);
-        wordList.add(word7);
-        wordList.add(word8);
-        wordList.add(word9);
-        wordList.add(word10);
+        List<Definition> definitionList = new ArrayList<>();
+        definitionList.add(definition1);
+        definitionList.add(definition2);
+        definitionList.add(definition3);
+        definitionList.add(definition4);
+        definitionList.add(definition5);
+        definitionList.add(definition6);
+        definitionList.add(definition7);
+        definitionList.add(definition8);
+        definitionList.add(definition9);
+        definitionList.add(definition10);
 
         // Handle randomization logic
         Random rand = new Random();
-        int n = rand.nextInt(wordList.size());
+        int n = rand.nextInt(definitionList.size());
 
-        // return a random definition object from wordList
-        return wordList.get(n);
+        // return a random definition object from definitionList
+        return definitionList.get(n);
     }
 
 

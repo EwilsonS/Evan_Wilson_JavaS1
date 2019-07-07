@@ -1,6 +1,6 @@
 package com.evanco.model;
 
-public class Word {
+public class Definition {
     private String word;
     private String definition;
 
