@@ -822,5 +822,7 @@ _________________________________________________
 <a name="jdbc"></a>
 
 ```
-Standup- explored the @After annotation to see how my db was behaving
+Standup
+- explored the @After annotation to see how my db was behaving
+- sql - discovered cascade while testing delete on an FK
 ```
