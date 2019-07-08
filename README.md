@@ -821,8 +821,38 @@ _________________________________________________
 **_7/08/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="jdbc"></a>
 
+@Transactional (params?)
+
 ```
 Standup
 - explored the @After annotation to see how my db was behaving
 - sql - discovered cascade while testing delete on an FK
+```
+
+_Spring Data JPA_
+  - ORM - object relational mapping, matches object to db tables
+    - Hibernate framwork abstracts away ORM implementations 
+  - @Repository vs marker interface repository 
+    - Repository interface
+      - CrudRepository - create read update delete
+        - PagingAndSorting
+        - JpaRepository - adds features to pagin and sorting
+  - 
+
+``` java
+@Entity  // maps to table
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) // props to be ignored when serializing to json
+@Table(name="customer") // optional annotation to name the table class will be default
+public classCustomer {
+  @Id // property level - identifies as primary key
+  @GeneratedValue(strategy= GenerationType.AUTO) // sets auto-increment
+  private Integer id;
+  private String firstName;
+  private String lastName;
+  private String company;
+  private String phone;
+  // the "one" side to a one to may relationsihp, cascade - links deletion to parent tables of  .EAGER(first) .LAZY(last)
+  @OneToMany(mappedBy="customerId", cascade= CascadeType.ALL, fetch= FetchType.EAGER)
+  private Set<Note> notes;
+  // Getters, setters, equals, and hashCode left out of this listing for brevity}
 ```
