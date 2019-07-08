@@ -839,20 +839,35 @@ _Spring Data JPA_
         - JpaRepository - adds features to pagin and sorting
   - 
 
+
 ``` java
-@Entity  // maps to table
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) // props to be ignored when serializing to json
-@Table(name="customer") // optional annotation to name the table class will be default
+@Entity       // class level -  maps to table
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})      // props to be ignored when serializing to json
+@Table(name="customer")       // optional annotation to name the table class will be default
 public classCustomer {
-  @Id // property level - identifies as primary key
-  @GeneratedValue(strategy= GenerationType.AUTO) // sets auto-increment
+  @Id       // property level - identifies as primary key
+  @GeneratedValue(strategy= GenerationType.AUTO)      // sets auto-increment
   private Integer id;
   private String firstName;
   private String lastName;
   private String company;
   private String phone;
-  // the "one" side to a one to may relationsihp, cascade - links deletion to parent tables of  .EAGER(first) .LAZY(last)
+  // the "one" side to a one to may relationsihp, cascade - links deletion to parent tables of, .EAGER(first) .LAZY(last)
   @OneToMany(mappedBy="customerId", cascade= CascadeType.ALL, fetch= FetchType.EAGER)
   private Set<Note> notes;
   // Getters, setters, equals, and hashCode left out of this listing for brevity}
 ```
+
+Possible values for .ddl in `application.properties` include:  
+
+`none`—This is the default for MySQL databases. Spring Data JPA will not do anything to alter the database structure on startup.  
+
+`update`—Spring Data JPA will modify the database structure based on the annotations of the Java @Entity classes.  
+
+`create`—Spring Data JPA creates the database every time the application is started, but it does not drop the tables when the application quits.  
+
+`create-drop`—Spring Data JPA create the data every time the application is started and drops all the tables when the application quits.  
+
+We use the create value because we don't have a database. After the initial run, we could switch to none or update depending on our project requirements.  
+
+spring.jps.show-sql=true allows us to see the SQL statements that Spring Data JPA is executing.  
