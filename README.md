@@ -18,6 +18,8 @@
 [`Relational DBs(SQL)`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#data)
 [`Join`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#join)
 [`JDBC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jdbc)
+[`JPA`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jpa)
+
 
 
 
@@ -819,7 +821,7 @@ public class Artist {
 ```
 _________________________________________________
 **_7/08/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
-<a name="jdbc"></a>
+<a name="jpa"></a>
 
 @Transactional (params?)
 
@@ -852,22 +854,21 @@ public classCustomer {
   private String lastName;
   private String company;
   private String phone;
-  // the "one" side to a one to may relationsihp, cascade - links deletion to parent tables of, .EAGER(first) .LAZY(last)
+  // the "one" side to a one to may relationsihp, cascade - delets info of related tables, .EAGER(load dependent class objs right away) .LAZY(loads dependent class objs when called upon)
   @OneToMany(mappedBy="customerId", cascade= CascadeType.ALL, fetch= FetchType.EAGER)
   private Set<Note> notes;
   // Getters, setters, equals, and hashCode left out of this listing for brevity}
 ```
 
-Possible values for .ddl in `application.properties` include:  
+Possible values for .ddl in **`application.properties`** include:  
+  - **`none`** — This is the default for MySQL databases. Spring Data JPA will not do anything to alter the database structure on startup.  
 
-`none`—This is the default for MySQL databases. Spring Data JPA will not do anything to alter the database structure on startup.  
+ - **`update`** — Spring Data JPA will modify the database structure based on the annotations of the Java @Entity classes.  
 
-`update`—Spring Data JPA will modify the database structure based on the annotations of the Java @Entity classes.  
+ - **`create`** — Spring Data JPA creates the database every time the application is started, but it does not drop the tables when the application quits.  
 
-`create`—Spring Data JPA creates the database every time the application is started, but it does not drop the tables when the application quits.  
+ - **`create-drop`** — Spring Data JPA create the data every time the application is started and drops all the tables when the application quits.  
 
-`create-drop`—Spring Data JPA create the data every time the application is started and drops all the tables when the application quits.  
+ - We use the create value because we don't have a database. After the initial run, we could switch to none or update depending on our project requirements.  
 
-We use the create value because we don't have a database. After the initial run, we could switch to none or update depending on our project requirements.  
-
-spring.jps.show-sql=true allows us to see the SQL statements that Spring Data JPA is executing.  
+ - spring.jps.show-sql=true allows us to see the SQL statements that Spring Data JPA is executing.  
