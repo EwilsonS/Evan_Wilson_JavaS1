@@ -872,3 +872,11 @@ Possible values for .ddl in **`application.properties`** include:
  - We use the create value because we don't have a database. After the initial run, we could switch to none or update depending on our project requirements.  
 
  - spring.jps.show-sql=true allows us to see the SQL statements that Spring Data JPA is executing.  
+
+ _________________________________________________
+**_7/09/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name=""></a>
+
+```
+Standup - (Problem)Ambiguous handler method (solution)rename paths. best practices?
+```
