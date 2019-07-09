@@ -1,9 +1,12 @@
 package com.evanco.model;
 
 public class Definition {
+
+    // Properties
     private String word;
     private String definition;
 
+    // Getters and setters
     public String getWord() {
         return word;
     }
