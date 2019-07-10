@@ -485,31 +485,7 @@ List<Motorcycle> bikes = new CsvToBeanBuilder<Motorcycle>(new FileReader("motorc
 
 
   ```
-_________________________________________________
-**_6/20/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
-
-stand up -
-  reverse array to get the first instance of a duplicate element
-  then subtract that index from original array.size() to get the last
-  instance of that element's index.
-  List<Integer> tenRandomsCopy = new ArrayList<>(tenRandoms);
-  Collections.reverse(tenRandomsCopy);
-                
-
-
-_________________________________________________
-**_6/21/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
-
 17 lines per method
-
-carslist app discussion - always ask why this?
-
-Structured data lesson- Would have been helpful to see code first. Then instructor gives quick description (1 minute or so). No questions answred at this time. Then begin lesson. 
-
-
-**Retrospective**  
-  - H) 
-  - L) Need examples before definitions, then examples again;.
 
   _________________________________________________
 **_6/24/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name="service">
@@ -651,16 +627,6 @@ Aspect oriented programming(AOP)
 
 _Web Interfaces_
 
-
-_________________________________________________
-**_6/28/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
-
-M2 summative review
-```
-- Improve Java Talk
-- Use constructor for data hiding/ consistency 
-```
-
 _________________________________________________
 **_7/01/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="data"></a>
@@ -774,7 +740,7 @@ _TDD and Unit/Integration Tests_ -
     - `Assert`  
   - dependency injection - the container provides the instance of the object we are testing
   - retruned Lists are never null when returned from DAO.
-  - :: doulble colon - method reference
+  - :: double colon - method reference
 
 *`sql injection` attack are prevented by jdbc template, alwasy use **prepared statements***  
 `result set` - each returned row obj from the db.  
@@ -874,9 +840,11 @@ Possible values for .ddl in **`application.properties`** include:
  - spring.jps.show-sql=true allows us to see the SQL statements that Spring Data JPA is executing.  
 
  _________________________________________________
-**_7/09/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
-<a name=""></a>
+**_7/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="Service Layer"></a>
 
-```
-Standup - (Problem)Ambiguous handler method (solution)rename paths. best practices?
-```
+_Service Layer_
+  - Provides a way to access and modify data outside the controller
+  - @Component annotation
+  - list DAOs as properties
+
