@@ -1,6 +1,7 @@
 <a name="top"></a>
 
 ##### Keywords
+**[`Box of Randoms`]**(https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
 [`Iteration planning`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#iteration)
 [`Loops`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#loops)
 [`Composition`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#composition)
@@ -19,6 +20,8 @@
 [`Join`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#join)
 [`JDBC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jdbc)
 [`JPA`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jpa)
+[`Mocking`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mocking)
+
 
 
 
@@ -603,9 +606,9 @@ _MVC Patterns_
 _Spring Rest Controller_
   - `Dispatcher servlet` routes requests to Rest controller
 ```java  
-@RestController - class_ level annotation
-@RequestMapping - method level, 2 params(value = "/endpoint", Method = RequestMethod Get..)
-@ResponseStatus - method level
+@RestController - // class_ level annotation
+@RequestMapping - // method/class level, 2 params(value = "/endpoint", Method = RequestMethod Get..) class level will ensure you hit that route first (ex. /api/endpoint)
+@ResponseStatus - // method level
 @PathVariable - 
 ```
 _DTO _ - Object that carries data between processes
@@ -752,7 +755,7 @@ _annotations_
 ``` java
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
-@Autowired - method level
+@Autowired - method level 
 @Repository - class_ level annotation to identify current class_ as one connected to db
 @transactional
 ```
@@ -845,6 +848,28 @@ Possible values for .ddl in **`application.properties`** include:
 
 _Service Layer_
   - Provides a way to access and modify data outside the controller
-  - @Component annotation
+  - @Component annotation thells spring this class is used as a bean
   - list DAOs as properties
 
+ _________________________________________________
+**_7/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="mocking"></a>
+
+_Mockinkg_
+  - Mokito - framwork to mock objects for unit testing
+  - Why unit testing? to eliminate need for external dependencies, non deterninistic
+  - 
+
+
+
+<!-- ==================================================================================================================== -->
+ [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)
+<a name="random"></a>
+Revolving Box or Random
+```
+term
+- serialization- java to json
+- deserialization - json to java
+
+transactional manager
+```
