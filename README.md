@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 ##### Keywords
-**[`Box of Randoms`]**(https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
+[`Box of Randoms`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
 [`Iteration planning`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#iteration)
 [`Loops`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#loops)
 [`Composition`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#composition)
