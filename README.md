@@ -40,13 +40,14 @@ _________________________________________________
  - concurrency
 
 **Git Shorts**  
-`git checkout -b name-of-new-branch`  
+`git checkout -b name-of-new-branch`  new branch
+`git checkout name-of-new-branch` switch
 `git branch`  will show  
 `git touch`... edit your stuff  
 `git add .`  
 `git commit -m "description"`  
 `git push origin name-of-branch`   
-`git branch -D name-of-branch`  
+`git branch -D name-of-branch` delete
 
 _________________________________________________
 **_6/3/2019_**  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
@@ -310,6 +311,8 @@ _Iterators_
     - next()
     - (remove()-_optional_)
   - no order  
+
+*List_Iterator can go either direction
 
 _List_ - interface  
     - array list implements list  
@@ -578,7 +581,7 @@ _________________________________________________
 **_6/26/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name ="mvc"></a>
 
 _Servlet Containers_
-  - Java containers that run jaba-based web apps
+  - Java containers that run java-based web apps
   - Apps **implement** the Java Servlet Specification
     - defines how it should act and what features it should have
   - Routes HTTP req to Java components to `servlets`
@@ -861,45 +864,24 @@ _Mockinkg_
   - 
 
 
-``` java
-/**
-     * Moves the cursor forward one row from its current position.
-     * A <code>ResultSet</code> cursor is initially positioned
-     * before the first row; the first call to the method
-     * <code>next</code> makes the first row the current row; the
-     * second call makes the second row the current row, and so on.
-     * <p>
-     * When a call to the <code>next</code> method returns <code>false</code>,
-     * the cursor is positioned after the last row. Any
-     * invocation of a <code>ResultSet</code> method which requires a
-     * current row will result in a <code>SQLException</code> being thrown.
-     *  If the result set type is <code>TYPE_FORWARD_ONLY</code>, it is vendor specified
-     * whether their JDBC driver implementation will return <code>false</code> or
-     *  throw an <code>SQLException</code> on a
-     * subsequent call to <code>next</code>.
-     *
-     * <P>If an input stream is open for the current row, a call
-     * to the method <code>next</code> will
-     * implicitly close it. A <code>ResultSet</code> object's
-     * warning chain is cleared when a new row is read.
-     *
-     * @return <code>true</code> if the new current row is valid;
-     * <code>false</code> if there are no more rows
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
-     */
-    boolean next() throws SQLException;
-```
-
 
 <!-- ==================================================================================================================== -->
  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)
-<a name="random"></a>
-Revolving Box or Random
-```
-term
+<a name="random"></a> 
+Revolving Box of Randoms
+
+ ``` java 
 - serialization- java to json
 - deserialization - json to java
+servlet container
+tomcat
+@requestbody
+@responsebody
+rest architectural style
+yaml structure
+mvc vs spring mvc - 
+DOM ? -
 
 transactional manager
+
 ```
