@@ -851,8 +851,16 @@ Possible values for .ddl in **`application.properties`** include:
 
 _Service Layer_
   - Provides a way to access and modify data outside the controller
-  - @Component annotation thells spring this class is used as a bean
+  - @Component annotation tells spring this class is used as a bean
   - list DAOs as properties
+
+_View Models_
+<p>
+The purpose of a ViewModel is for the view to have a single object to render, 
+alleviating the need for UI logic code in the view that would otherwise be necessary. 
+This means the only responsibility, or concern, of the view is to render that single
+ ViewModel object, aiding in a cleaner separation of concerns <b>(SoC)</b>.
+</p>
 
  _________________________________________________
 **_7/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
