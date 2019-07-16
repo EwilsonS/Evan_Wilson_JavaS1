@@ -33,6 +33,9 @@ public class PublisherDaoJdbcTemplateImpl implements PublisherDao{
     private static final String DELETE_PUBLISHER_SQL =
             "delete from publisher where publisher_id=?";
 
+    private  static  final String DELETE_BOOK_BY_PUBLISHER_ID_SQL =
+            "delete from book where publisher_id=?";
+
     // Constructor injection
     public PublisherDaoJdbcTemplateImpl(JdbcTemplate jdbcTemplate){
         this.jdbcTemplate = jdbcTemplate;
@@ -75,6 +78,7 @@ public class PublisherDaoJdbcTemplateImpl implements PublisherDao{
 
     @Override
     public void deletePublisher(int publisherId) {
+        jdbcTemplate.update(DELETE_BOOK_BY_PUBLISHER_ID_SQL, publisherId);
         jdbcTemplate.update(DELETE_PUBLISHER_SQL, publisherId);
     }
 

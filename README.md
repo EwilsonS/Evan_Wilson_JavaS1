@@ -20,6 +20,7 @@
 [`Join`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#join)
 [`JDBC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jdbc)
 [`JPA`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jpa)
+[`Service Layer`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#servicelayer)
 [`Mocking`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mocking)
 
 
@@ -847,7 +848,7 @@ Possible values for .ddl in **`application.properties`** include:
 
  _________________________________________________
 **_7/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
-<a name="Service Layer"></a>
+<a name="servicelayer"></a>
 
 _Service Layer_
   - Provides a way to access and modify data outside the controller
@@ -859,14 +860,14 @@ _View Models_
 The purpose of a ViewModel is for the view to have a single object to render, 
 alleviating the need for UI logic code in the view that would otherwise be necessary. 
 This means the only responsibility, or concern, of the view is to render that single
- ViewModel object, aiding in a cleaner separation of concerns <b>(SoC)</b>.
+ ViewModel object, aiding in a cleaner <b>separation of concerns (SoC)</b>.
 </p>
 
  _________________________________________________
 **_7/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="mocking"></a>
 
-_Mockinkg_
+_Mocking_
   - Mokito - framwork to mock objects for unit testing
   - Why unit testing? to eliminate need for external dependencies, non deterninistic
   - 
@@ -879,8 +880,8 @@ _Mockinkg_
 Revolving Box of Randoms
 
  ``` java 
-- serialization- java to json
-- deserialization - json to java
+serialization- java to json
+deserialization - json to java
 servlet container
 tomcat
 @requestbody
@@ -891,5 +892,8 @@ mvc vs spring mvc -
 DOM ? -
 
 transactional manager
+
+what is spring
+spring boot
 
 ```
