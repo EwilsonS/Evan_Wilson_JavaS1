@@ -740,7 +740,8 @@ _JDBC Templates_
 
 _TDD and Unit/Integration Tests_ - 
   - Red Green Refactor
-  - integration testing inclused the db
+  - integration testing includes the db
+  - unit testing removes dependency on outside data
   - AAA pattern
     - `Arrange`
     - `Act`
@@ -804,7 +805,7 @@ Standup
 - sql - discovered cascade while testing delete on an FK
 ```
 
-_Spring Data JPA_
+_Spring Data JPA_-java persistence api
   - ORM - object relational mapping, matches object to db tables
     - Hibernate framwork abstracts away ORM implementations 
   - @Repository vs marker interface repository 
