@@ -18,10 +18,13 @@
 [`MVC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mvc)
 [`Relational DBs(SQL)`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#data)
 [`Join`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#join)
+[`Dependency Injection`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#di)
 [`JDBC`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jdbc)
 [`JPA`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#jpa)
 [`Service Layer`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#servicelayer)
 [`Mocking`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mocking)
+[`Validation`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#validation)
+
 
 
 
@@ -746,14 +749,49 @@ _TDD and Unit/Integration Tests_ -
     - `Arrange`
     - `Act`
     - `Assert`  
-  - dependency injection - the container provides the instance of the object we are testing
   - retruned Lists are never null when returned from DAO.
   - :: double colon - method reference
+  - dependency injection - the container provides the instance of the object we are testing <a name="di"></a>
+  - 3 types
+    - field injection
+    - contructor injection
+    - setter injection
 
-*`sql injection` attack are prevented by jdbc template, alwasy use **prepared statements***  
+``` java
+// Field-based
+@Component
+public class TheClientBean{
+  private TheBean theBean;
+}
+
+// Contructor-based
+@Component
+public class TheClientBean{
+  private final TheBean theBean;
+
+  @Autowired
+  public TheClientBean(TheBean theBean){
+    this.theBean = theBean;
+  }
+}
+
+// Setter-based
+@Component
+public class TheClientBean{
+  private TheBean theBean;
+
+  @Autowired
+  public setTheBean(TheBean theBean){
+    this.theBean = theBean;
+  }
+}
+
+```
+
+*`sql injection` attacks are prevented by jdbc template, alwasy use **prepared statements***  
 `result set` - each returned row obj from the db.  
-`queryForObject` - method ot return exactly one result  
-`query` - method to return zero or more 
+`jdbc.queryForObject` - method to return exactly one result  
+`jdbc.query` - method to return zero or more 
 
 _annotations_
 
@@ -870,10 +908,25 @@ This means the only responsibility, or concern, of the view is to render that si
 
 _Mocking_
   - Mokito - framwork to mock objects for unit testing
-  - Why unit testing? to eliminate need for external dependencies, non deterninistic
-  - 
+  - Why unit testing? to eliminate need for external dependencies, non deterninistic  
 
+<a name="validation"></a>
 
+Validation annotations  
+``` java
+@NotNull // validates that the annotated property value is not null
+@AssertTrue // validates that the annotated property value is true
+@Size // validates that the annotated property value has a size between the attributes min and max; can be applied to String, Collection, Map, and array properties
+@Min // vValidates that the annotated property has a value no smaller than the value attribute
+@Max // validates that the annotated property has a value no larger than the value attribute
+@Email // validates that the annotated property is a valid email address Some annotations accept additional attributes, but the message attribute is common to all of them. This is the message that will usually be rendered when the value of the respective property fails validation. 
+@NotEmpty // validates that the property is not null or empty; can be applied to String, Collection, Map or Array values
+@NotBlank // can be applied only to text values and validated that the property is not null or whitespace
+@Positive and @PositiveOrZero // apply to numeric values and validate that they are strictly positive, or positive including 0
+@Negative and @NegativeOrZero // apply to numeric values and validate that they are strictly negative, or negative including 0
+@Past and @PastOrPresent // validate that a date value is in the past or the past including the present; can be applied to date types including those added in Java 8
+@Future and @FutureOrPresent // validates that a date value is in the future, or in the future including the present
+```
 
 <!-- ==================================================================================================================== -->
  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)
@@ -896,5 +949,7 @@ transactional manager
 
 what is spring
 spring boot
+.class at the end of an object referece
+
 
 ```
