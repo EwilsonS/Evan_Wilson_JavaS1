@@ -1,7 +1,11 @@
 package com.evanco.EvanWilsonU1Capstone.controller;
 
-import com.evanco.EvanWilsonU1Capstone.model.Game;
+import com.evanco.EvanWilsonU1Capstone.exception.NotFoundException;
+import com.evanco.EvanWilsonU1Capstone.service.ManageInventoryService;
+import com.evanco.EvanWilsonU1Capstone.viewmodel.GameViewModel;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -10,59 +14,71 @@ import java.util.List;
 @RestController
 @RequestMapping("/game")
 public class GameController {
-    //@Autowired
-    // service Layer here
 
+    @Autowired
+    ManageInventoryService service;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Game createGame(Game game){
-        System.out.println("=== CREATE Game method ====");
-        return null;
+    public GameViewModel createGame(@RequestBody @Valid GameViewModel game){
+        return service.saveGame(game);
     }
 
     @GetMapping("/all")
     @ResponseStatus(HttpStatus.OK)
-    public List<Game> getAllGames() {
-        System.out.println("=== ALL Games ========");
-        return null;
+    public List<GameViewModel> getAllGames() {
+        return service.findAllGames();
     }
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Game getGame(@PathVariable("id") int id) {
-        System.out.println("=== GET Game =======");
-        return null;
+    public GameViewModel getGame(@PathVariable("id") int id) {
+        if(service.findGameById(id) == null){
+            throw new NotFoundException("Game not found for id: " + id);
+        }
+        return service.findGameById(id);
     }
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateGame(@PathVariable("id") int id, @RequestBody @Valid Game game){
-        System.out.println("=== UPDATE Game =====");
+    public void  updateGame(@PathVariable("id") int id, @RequestBody GameViewModel gvm){
+        if(gvm.getGame_id() == 0){
+            gvm.setGame_id(id);
+        }
+        if(id != gvm.getGame_id()){
+            throw new IllegalArgumentException("Id on path must match Game id");
+        }
+        service.updateGame(gvm);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteGame(@PathVariable("id") int id){
-        System.out.println("=== DELETE Game)");
+        service.deleteGame(id);
     }
 
     @GetMapping("/title?{title}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Game> getGamesByTitle(@PathVariable("title") String title){
-        System.out.println("=== GET by title =====");
-        return null;
+    public List<GameViewModel> getGamesByTitle(@PathVariable("title") String title){
+        if(service.findGamesByTitle(title).size() == 0){
+            throw new NotFoundException("Sorry there are no games with the title: " + title);
+        }
+        return service.findGamesByTitle(title);
     }
     @GetMapping("/esrb_rating?{esrb}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Game> getGamesByRating(@PathVariable("esrb") String esrb){
-        System.out.println("=== GET by esrb =====");
-        return null;
+    public List<GameViewModel> getGamesByRating(@PathVariable("esrb") String esrb){
+        if(service.findGamesByRating(esrb).size() == 0){
+            throw new NotFoundException("Sorry there are no games with an esrb rating of: " + esrb);
+        }
+        return service.findGamesByRating(esrb);
     }
     @GetMapping("/studio?{studio}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Game> getGamesByStudio(@PathVariable("studio") String studio){
-        System.out.println("=== GET by studio =====");
-        return null;
+    public List<GameViewModel> getGamesByStudio(@PathVariable("studio") String studio){
+        if(service.findGamesByStudio(studio).size() == 0){
+            throw new NotFoundException("Sorry there are no games from the studio: " + studio);
+        }
+        return service.findGamesByStudio(studio);
     }
 }

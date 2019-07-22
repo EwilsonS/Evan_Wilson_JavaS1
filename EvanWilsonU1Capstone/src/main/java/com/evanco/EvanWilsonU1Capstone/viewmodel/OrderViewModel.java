@@ -26,10 +26,9 @@ public class OrderViewModel {
     private String zipcode;
     @NotEmpty(message = "Enter the Item type")
     private String item_type;
-    @NotEmpty(message = "Enter the Item_Id")
+    @Min(value = 1)
     private int item_id;
-    @NotEmpty(message = "Quantity cannot be blank")
-    @Positive
+    @Min(value = 0)
     private int quantity;
 
     //---------------------------------------------------------------------

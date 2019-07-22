@@ -18,12 +18,10 @@ public class TshirtViewModel {
     private String color;
     @NotEmpty(message = "Enter a color por favor")
     private String description;
-    @NotEmpty(message = "Enter price")
     @DecimalMin(value = "0.0", inclusive = true)
     @DecimalMax(value = "999.99", inclusive = true)
     private BigDecimal price;
-    @NotEmpty(message = "Please enter a quantity")
-    @PositiveOrZero
+    @Min(value = 0)
     private int quantity;
 
     //---------------------------------------------------------------------

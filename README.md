@@ -804,6 +804,7 @@ _annotations_
 ```
 
 Model with getters setters hashcode and equals methods
+
 ``` java
 public class Artist {
     // properties
@@ -812,6 +813,11 @@ public class Artist {
     public String getName() {return name;}
     //setters
     public void setName(String name) {this.name = name;}
+    
+    /*
+    Java Object hashCode() is a native method and returns the integer hash code value of the object. The general contract of hashCode() method is: Multiple invocations of hashCode() should return the same integer value, unless the object property is modified that is being used in the equals() method.
+    */
+    
     // equals, for testing
     @Override
     public boolean equals(Object o) {
@@ -946,6 +952,7 @@ mvc vs spring mvc -
 DOM ? -
 
 transactional manager
+@Transactional (params?)
 
 what is spring
 spring boot

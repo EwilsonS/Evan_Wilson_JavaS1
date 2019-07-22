@@ -28,20 +28,30 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Endpoints:
  * /game: ....................... POST new game
  * /game/all: ................... GET all games
- * /game/{id}: .................. GET, Put, Delete by id
- * /game/title{title}: .......... GET list of games by title name
- * /game/studio{studio}: ........ GET list of games by studio name
+ * /game/{id}: .................. GET, PUT, Delete by id
+ * /game/title?{title}: ......... GET list of games by title name
+ * /game/studio?{studio}: ....... GET list of games by studio name
  * /game/esrb_rating{rating}: ... GET list of games by rating
  * /console: .................... POST new console
  * /console/all: ................ GET all consoles
- * /console/{id}: ............... GET, Put, Delete console by id
- * /console/manufacturer{mfr}: .. GET list of consoles by manufacturer id
+ * /console/{id}: ............... GET, PUT, Delete console by id
+ * /console/manufacturer?{mfr}: . GET list of consoles by manufacturer id
  * /tshirt: ..................... POST new t-shirt
  * /tshirt/all: ................. GET all t-shirts
  * /tshirt/{id}: ................ GET, Put, Delete t-shirt by id
- * /tshirt/color{color}: ........ GET list of t-shirts by color
- * /tshirt/size{size}: .......... GET list of t-shirts by size
+ * /tshirt/color?{color}: ....... GET list of t-shirts by color
+ * /tshirt/size?{size}: ......... GET list of t-shirts by size
  * /order: ...................... POST new order Returns new Invoice
+ *
+ * Postman order testing template
+ *  	   "name": "",
+ *         "street": "",
+ *         "city": "",
+ *         "state": "",
+ *         "zipcode": "",
+ *         "item_type": "",
+ *         "item_id": ,
+ *         "quantity":
  */
 @SpringBootApplication
 public class EvanWilsonU1CapstoneApplication {

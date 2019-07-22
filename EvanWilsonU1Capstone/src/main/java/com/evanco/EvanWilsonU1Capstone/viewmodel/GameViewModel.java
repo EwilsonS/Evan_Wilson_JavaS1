@@ -19,16 +19,12 @@ public class GameViewModel {
     private String esrb_rating;
     @NotEmpty(message = "Description cannot be left empty")
     private String description;
-    @NotEmpty(message = "Price cannot be left empty")
     @DecimalMin(value = "0.0", inclusive = true)
     @DecimalMax(value = "999.99", inclusive = true)
     private BigDecimal price;
     @NotEmpty(message = "Studio cannot be left empty")
     private String studio;
-    // this requirement is not specified in the provided schema, however logically
-    // new inventory items should not have null quantity.
-    @PositiveOrZero
-    @NotEmpty(message = "quantity cannot be left empty")
+    @Min(value = 0)
     private int quantity;
 
     //---------------------------------------------------------------------
@@ -93,18 +89,20 @@ public class GameViewModel {
     //---------------------------------------------------------------------
     // equals() and hasCode()
     //---------------------------------------------------------------------
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         GameViewModel that = (GameViewModel) o;
         return getGame_id() == that.getGame_id() &&
-                getQuantity() == that.getQuantity() &&
                 getTitle().equals(that.getTitle()) &&
                 getEsrb_rating().equals(that.getEsrb_rating()) &&
                 getDescription().equals(that.getDescription()) &&
                 getPrice().equals(that.getPrice()) &&
-                getStudio().equals(that.getStudio());
+                getStudio().equals(that.getStudio()) &&
+                getQuantity() == that.getQuantity();
+
     }
 
     @Override

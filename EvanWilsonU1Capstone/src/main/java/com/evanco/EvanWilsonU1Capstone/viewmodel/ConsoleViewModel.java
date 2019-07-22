@@ -1,9 +1,6 @@
 package com.evanco.EvanWilsonU1Capstone.viewmodel;
 
-import javax.validation.constraints.DecimalMax;
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.PositiveOrZero;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -20,12 +17,10 @@ public class ConsoleViewModel {
     private String manufacturer;
     private String memory_amount;
     private String processor;
-    @NotEmpty(message = "Please enter a price")
     @DecimalMin(value = "0.0", inclusive = true)
     @DecimalMax(value = "999.99", inclusive = true)
     private BigDecimal price;
-    @NotEmpty(message = "Please enter a starting qty.")
-    @PositiveOrZero
+    @Min(value = 0)
     private int quantity;
 
     //---------------------------------------------------------------------

@@ -1,6 +1,9 @@
 package com.evanco.EvanWilsonU1Capstone.dao;
 
+import com.evanco.EvanWilsonU1Capstone.model.SalesTaxRate;
+
 import java.math.BigDecimal;
+import java.util.List;
 
 public interface SalesTaxDao {
     /**
@@ -10,4 +13,6 @@ public interface SalesTaxDao {
      * @return tax decimal from db based on the state. (data already provided and never manipulated)
      */
     BigDecimal calculateTax(String state);
+
+    List<SalesTaxRate> getAllStates();
 }

@@ -12,6 +12,7 @@ public class Game {
     private String studio;
     private int quantity;
 
+
     public int getGame_id() {
         return game_id;
     }

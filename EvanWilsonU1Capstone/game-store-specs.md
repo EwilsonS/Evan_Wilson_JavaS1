@@ -9,8 +9,8 @@ Your solution must have the following structural elements:
 [x] Your project must be built using Spring Boot and Spring MVC. Initialize your project using ```start.spring.io```  
 [x] Your solution must include a DAO the utilized JdbcTemplates and Prepared Statements  
 [x] Your REST API must be documented with Swagger  
-[] Your REST API must accept and return data in JSON format where appropriate  
-[] You must implement ControllerAdvice to handle exceptions and return propery HTTP status codes and data when exception occur. This includes handling all violoations of business rules.  
+[x] Your REST API must accept and return data in JSON format where appropriate  
+[x] You must implement ControllerAdvice to handle exceptions and return proper HTTP status codes and data when exception occur. This includes handling all violoations of business rules.  
 
 ## Methodology
 [x] You must manage your work in Pivotal Tracker  
@@ -18,9 +18,9 @@ Your solution must have the following structural elements:
 [x] You must estimate your work using story points  
 [x] You must use a Test Driven Development approach (inluding Red/Green/Refactor) for your code  
 [x] You must use JUnit for unit and integration tests  
-[] Your design must include a Service Layer  
-[] Your unit test suite should utilize mock objects where appropriate  
-[] You should utilize JSR303 for input validation  
+[x] Your design must include a Service Layer  
+[x] Your unit test suite should utilize mock objects where appropriate  
+[x] You should utilize JSR303 for input validation  
 
 ## Requirements/Features
 
@@ -39,7 +39,7 @@ This system must manage the inventory of video games, game consoles, and t-shirt
        1. You must create a separate DAO for Consoles
     1. T-Shirts:
        1. Perform standard CRUD operations for T-Shirts
-       1. Search for T-Shirts by Color
+       1. Search for T-Shirts by Color  
        1. Search for T-Shirts by Size
        1. You must create a separate DAO for T-Shirts
     1. Purchasing Items:
@@ -125,14 +125,14 @@ create table if not exists invoice (
 
 ## Business Rules
 
-1. []Sales tax applies only to the cost of the items.
-2. []Sales tax does not apply to any processing fees for an invoice.
-3. []The processing fee is applied only once per order regardless of the number of items in the order unless the number of items on the order is greater than 10 in which case an *additional* processing fee of $15.49 is applied to the order. 
-4. []The order process logic must properly update the quantity on hand for the item in the order.
-5. []Order quantity must be greater than zero.
-6. []Order quantity must be less than or equal to the number of items on hand in inventory.
-7. []Order must contain a valid state code.
-8. []The REST API must properly handle and report all violations of business rules.
+1. [x]Sales tax applies only to the cost of the items.
+2. [x]Sales tax does not apply to any processing fees for an invoice.
+3. [x]The processing fee is applied only once per order regardless of the number of items in the order unless the number of items on the order is greater than 10 in which case an *additional* processing fee of $15.49 is applied to the order. 
+4. [x]The order process logic must properly update the quantity on hand for the item in the order.
+5. [x]Order quantity must be greater than zero.
+6. [x]Order quantity must be less than or equal to the number of items on hand in inventory.
+7. [x]Order must contain a valid state code.
+8. [x]The REST API must properly handle and report all violations of business rules.
 
 ## Data
 

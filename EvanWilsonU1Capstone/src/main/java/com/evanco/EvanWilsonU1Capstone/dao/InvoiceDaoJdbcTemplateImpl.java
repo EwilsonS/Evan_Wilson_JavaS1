@@ -39,6 +39,9 @@ public class InvoiceDaoJdbcTemplateImpl implements InvoiceDao, ProcessingFeeDao,
     private static final String DELETE_INVOICE_SQL =
             "delete from invoice where invoice_id=?";
 
+    private static final String SELECT_ALL_STATES_SQL =
+            "select * from sales_tax_rate";
+
     // Constructor injection
     @Autowired
     public InvoiceDaoJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {
@@ -140,6 +143,11 @@ public class InvoiceDaoJdbcTemplateImpl implements InvoiceDao, ProcessingFeeDao,
     @Override
     public void deleteInvoice(int id) {
         jdbcTemplate.update(DELETE_INVOICE_SQL, id);
+    }
+
+    @Override
+    public List<SalesTaxRate> getAllStates() {
+        return jdbcTemplate.query(SELECT_ALL_STATES_SQL, this::mapRowToSalesTaxRate);
     }
 
     // Helper methods to map properties to rows
