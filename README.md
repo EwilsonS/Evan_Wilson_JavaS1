@@ -798,9 +798,9 @@ _annotations_
 ``` java
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
-@Autowired - method level 
-@Repository - class_ level annotation to identify current class_ as one connected to db
-@transactional
+@Autowired  //method level connects collaborating beans
+@Repository  //class_ level annotation to identify current class_ as one connected to db
+@transactional  //ensures commit/rollback and lock out
 ```
 
 Model with getters setters hashcode and equals methods
