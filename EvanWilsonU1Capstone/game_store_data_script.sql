@@ -14,10 +14,10 @@ values
 ("E54", "Evan Co.", "8bit", "xap intel", 349.99, 30);
 
 insert into t_shirt (size, color, description, price, quantity)
-valuse
+values
 ("L", "Black", "1980s vintage gamer", 14.49, 11),
 ("XXL", "Black", "1980s vintage gamer", 14.49, 11),
-("XL", "Black", "1980s vintage gamer", 14.49, 11),
+("XL", "Yellow", "1980s vintage gamer", 14.49, 11),
 ("M", "Black", "1980s vintage gamer", 14.49, 11),
 ("S", "Black", "1980s vintage gamer", 14.49, 11);
 

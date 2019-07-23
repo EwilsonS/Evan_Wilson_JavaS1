@@ -21,6 +21,7 @@ public class OrderController {
     public Invoice convertOrderToInvoice(@RequestBody @Valid OrderViewModel orderViewModel){
         return service.saveOrder(orderViewModel);
     }
+
     // For development only
     @GetMapping("/invoices")
     @ResponseStatus(HttpStatus.OK)

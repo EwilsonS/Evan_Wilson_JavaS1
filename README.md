@@ -579,7 +579,7 @@ _SI(spring initializr)_
   - start.spring.io - sets up project
   - tomcat -servlet to 
 
-_Swagger(openapi)_
+_Swagger(openapi)_ 
 
 _________________________________________________
 **_6/26/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  <a name ="mvc"></a>
@@ -590,7 +590,7 @@ _Servlet Containers_
     - defines how it should act and what features it should have
   - Routes HTTP req to Java components to `servlets`
 
-_Tomcat_ - refernce implemetaion of the servlet container
+_Tomcat_ - reference implemetaion of the servlet container
   - Implements the Servlet specification
   - components 
     - `Catalina` - servlet container

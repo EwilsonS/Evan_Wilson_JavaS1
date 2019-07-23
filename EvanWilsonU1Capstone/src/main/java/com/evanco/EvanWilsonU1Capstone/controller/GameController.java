@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/game")
+@RequestMapping("/games")
 public class GameController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class GameController {
         return service.saveGame(game);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<GameViewModel> getAllGames() {
         return service.findAllGames();

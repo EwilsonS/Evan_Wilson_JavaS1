@@ -26,22 +26,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 8. The REST API must properly handle and report all violations of business rules.
  *
  * Endpoints:
- * /game: ....................... POST new game
- * /game/all: ................... GET all games
- * /game/{id}: .................. GET, PUT, Delete by id
- * /game/title?{title}: ......... GET list of games by title name
- * /game/studio?{studio}: ....... GET list of games by studio name
- * /game/esrb_rating{rating}: ... GET list of games by rating
- * /console: .................... POST new console
- * /console/all: ................ GET all consoles
- * /console/{id}: ............... GET, PUT, Delete console by id
- * /console/manufacturer?{mfr}: . GET list of consoles by manufacturer id
- * /tshirt: ..................... POST new t-shirt
- * /tshirt/all: ................. GET all t-shirts
- * /tshirt/{id}: ................ GET, Put, Delete t-shirt by id
- * /tshirt/color?{color}: ....... GET list of t-shirts by color
- * /tshirt/size?{size}: ......... GET list of t-shirts by size
- * /order: ...................... POST new order Returns new Invoice
+ * /games: ....................... POST new game, GET all games
+ * /games/{id}: .................. GET, PUT, Delete by id
+ * /games/title?{title}: ......... GET list of games by title name
+ * /games/studio?{studio}: ....... GET list of games by studio name
+ * /games/esrb_rating?{rating}: .. GET list of games by rating
+ * /consoles: .................... POST new console, GET all consoles
+ * /consoles/{id}: ............... GET, PUT, Delete console by id
+ * /consoles/manufacturer?{mfr}: . GET list of consoles by manufacturer id
+ * /tshirts: ..................... POST new t-shirt, GET all t-shirts
+ * /tshirts/{id}: ................ GET, Put, Delete t-shirt by id
+ * /tshirts/color?{color}: ....... GET list of t-shirts by color
+ * /tshirts/size?{size}: ......... GET list of t-shirts by size
+ * /order: ....................... POST new order Returns new Invoice
  *
  * Postman order testing template
  *  	   "name": "",

@@ -28,7 +28,7 @@ public class OrderViewModel {
     private String item_type;
     @Min(value = 1)
     private int item_id;
-    @Min(value = 0)
+    @Min(value = 1)
     private int quantity;
 
     //---------------------------------------------------------------------

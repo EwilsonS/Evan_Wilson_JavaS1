@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/console")
+@RequestMapping("/consoles")
 public class ConsoleController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class ConsoleController {
         return service.saveConsole(console);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<ConsoleViewModel> getAllConsoles() {
         return service.findAllConsoles();

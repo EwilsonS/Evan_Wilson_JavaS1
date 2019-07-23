@@ -87,8 +87,6 @@ public class ServiceLayerTest {
 
         doReturn(invoice).when(invoiceDao).addInvoice(invoice2);
         doReturn(invoices).when(invoiceDao).getAllInvoices();
-
-
     }
 
     private void setUpSalesTaxDaoMock() {
@@ -211,7 +209,7 @@ public class ServiceLayerTest {
 
     // Order test
     @Test
-    public void saveAndGetInvoiceTest() {
+    public void saveAndGetInvoicesTest() {
         OrderViewModel ovm = new OrderViewModel();
         ovm.setName("Evan");
         ovm.setStreet("123 Main st");

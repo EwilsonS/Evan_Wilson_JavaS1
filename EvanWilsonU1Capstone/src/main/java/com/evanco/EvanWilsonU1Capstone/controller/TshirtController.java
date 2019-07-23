@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/tshirt")
+@RequestMapping("/tshirts")
 public class TshirtController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class TshirtController {
         return service.saveTshirt(tshirt);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<TshirtViewModel> getAllTshirts() {
         return service.findAllTshirts();
