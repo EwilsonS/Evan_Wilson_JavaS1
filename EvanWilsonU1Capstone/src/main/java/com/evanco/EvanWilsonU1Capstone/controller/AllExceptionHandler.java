@@ -25,7 +25,7 @@ public class AllExceptionHandler {
     @ExceptionHandler(value = {IllegalArgumentException.class})
     @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
     public ResponseEntity<VndErrors> illegalArgumentException(IllegalArgumentException e, WebRequest request) {
-        VndErrors error = new VndErrors(request.toString(), "Evan says: " + e.getMessage().toLowerCase());
+        VndErrors error = new VndErrors(request.toString(), "Evan says: no results, " + e.getCause() +", "+ e.getMessage());
         ResponseEntity<VndErrors> responseEntity = new ResponseEntity<>(error, HttpStatus.UNPROCESSABLE_ENTITY);
         return responseEntity;
     }

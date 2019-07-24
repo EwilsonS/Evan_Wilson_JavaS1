@@ -940,12 +940,12 @@ Validation annotations
 Revolving Box of Randoms
 
  ``` java 
-serialization- java to json
 deserialization - json to java
+serialization- java to json
 servlet container
-tomcat
-@requestbody
-@responsebody
+tomcat - implementation of the servelet container
+@requestbody // maps the HttpRequest body to a transfer object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object.
+@responsebody // tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
 rest architectural style
 yaml structure
 mvc vs spring mvc - 
@@ -958,5 +958,68 @@ what is spring
 spring boot
 .class at the end of an object referece
 
+```
+
+###Q and A
+``` java
+
+"Compare and contrast web applications and web services. "
+//
+"List the two most common data transfer formats for web services."
+//
+"List the two main types of data stores that back web applications and web services."
+//
+"Describe a request-response protocol."
+//
+"Describe the three main parts of an HTTP request."
+//
+"Describe the two required HTTP request methods."
+//
+"Describe the four most common HTTP request methods used by web services."
+//
+"Describe the three main parts of an HTTP response."
+//
+"Describe the five groups of HTTP response codes."
+//
+"Explain the architectural principles of REST."
+//
+"Explain the Richardson Maturity Model."
+//
+"Describe JSON."
+//
+"Explain how key/value pairs and arrays are used in JSON."
+//
+"Describe Spring."
+//
+"Describe Spring Boot."
+//
+"Explain the relationship between Spring Boot and the Spring Initializr."
+//
+"Explain the Spring Boot project structure."
+//
+"Explain the purpose of a Servlet container."
+//
+"Compare and contrast a Servlet container and the Servlet API."
+//
+"Explain Tomcats relationship with Servlet containers and the Servlet API."
+//
+"Describe Spring MVC."
+//
+"Explain the Front Controller Pattern."
+//
+"Describe the MVC Pattern."
+//
+"Explain the following sections of the OpenAPI 3.x specification:"
+//
+"Metadata, Servers, Paths, Parameters, Request body, Responses, Data Definitions and refs"
+//
+"Explain the following Spring annotations:"
+//
+"@RestController, @RequestMapping, @RequestBody, @ResponseBody, @PathVariable, @Valid"
+//
+"Explain the Document Object Model (DOM)"
+//
+"Explain how a browser renders conten"
+//
 
 ```
