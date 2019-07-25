@@ -24,6 +24,8 @@
 [`Service Layer`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#servicelayer)
 [`Mocking`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mocking)
 [`Validation`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#validation)
+[`Microservices`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#microservices)
+
 
 
 
@@ -52,6 +54,9 @@ _________________________________________________
 `git commit -m "description"`  
 `git push origin name-of-branch`   
 `git branch -D name-of-branch` delete
+`git clean -d -f` undo error pull
+`git stash` put away git changes
+`git config --system core.longpaths true` in bash admin allow long paths
 
 _________________________________________________
 **_6/3/2019_**  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)  
@@ -281,10 +286,11 @@ _Constructors and Inheritance_
   - super must be the first statement in the code block
 
 _Protected_ - 
-  - only code in that class and children classes have access to its protected properties.
+  - only code in that class and childre n classes have access to its protected properties.
 
 _Abstract_ - has at least one method that will not be implemented.
   - all child classes must use this method but in any way they want.Abstract methods define access modifier, void, paramas. When abstract is implemented, the methjod signature must match.
+  <!-- In Java, abstract means that the class can still be extended by other classes but that it can never be instantiated (turned into an object). -->
 
 Standup-codebat solution vs mine. .max() & other array functions
 _________________________________________________
@@ -909,16 +915,15 @@ This means the only responsibility, or concern, of the view is to render that si
 </p>
 
  _________________________________________________
-**_7/10/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+**_7/12/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="mocking"></a>
 
 _Mocking_
   - Mokito - framwork to mock objects for unit testing
   - Why unit testing? to eliminate need for external dependencies, non deterninistic  
 
-<a name="validation"></a>
 
-Validation annotations  
+Validation annotations  <a name="validation"></a>
 ``` java
 @NotNull // validates that the annotated property value is not null
 @AssertTrue // validates that the annotated property value is true
@@ -934,6 +939,69 @@ Validation annotations
 @Future and @FutureOrPresent // validates that a date value is in the future, or in the future including the present
 ```
 
+ _________________________________________________
+**_7/24/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="microservices"></a>
+
+_Twelve-Factor app_  - software as a service Saas  
+  - Codebase
+  - Dependencies
+  - Config
+  - Backing serices
+  - Build, Release, Run
+  - Processes
+  - Port Binding
+  - Concurrency
+  - Disposability
+  - Dev/Prod parity
+  - Logs
+  - Admin Proces
+
+_Cloud-Native apps_
+  - Main ideas
+    - Scalabilty
+      - Vertical - Limited by size of existing hardware. Makes best use of space already available. Adding tables to a restaurant
+      - Horizontal - Takes time, resources and planning. Expanding a highway
+    - Reliabilty
+    - Agility
+  - Approach
+    - Independent Conponents for scalability
+    - Contraints -
+    - Practices - repeatable actions that recognizes the constraints 
+
+_Microservices_ - Small independent services, high cohesion, follow single responsibilty principle
+  - Advantages
+    - Independent scaling, Independent release schedules/cycles (features/ bugs),  Right tech for right job, Resilience.
+  - Disadvantages
+    - Complexity
+    - Lots of moving parts
+
+_Configuration Servers_
+  1. Initializr dependencies - Config Server
+  1. `@EnableConfigServer` to main
+  2. 
+
+_Config Client_
+  1. Initializr dependencies - Web starter, Config Client, Spring Boot Actuator
+  1. 
+  1. `server.port=7979` (git hub)
+  1. `management.endpoints.web.exposure.include=*` (git hub)
+
+**u2m1l2 activities**
+
+ _________________________________________________
+**_7/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="serviceregistry"></a>
+
+_Service Registry_ - a database of services
+  - Advantages - service instances are registered at startup and deregistered at shutdown
+  - Disadvantages - Must be setup, configured and managed. It is a **critical system component** highly available.
+  - Service discovery- similar to dns->used to find ip address of a site.
+
+
+
+
+
 <!-- ==================================================================================================================== -->
  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)
 <a name="random"></a> 
@@ -943,7 +1011,7 @@ Revolving Box of Randoms
 deserialization - json to java
 serialization- java to json
 servlet container
-tomcat - implementation of the servelet container
+tomcat - implementation of the servelet container by Spring boot
 @requestbody // maps the HttpRequest body to a transfer object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object.
 @responsebody // tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
 rest architectural style
@@ -964,15 +1032,15 @@ spring boot
 ``` java
 
 "Compare and contrast web applications and web services. "
-//
+// A web service is a componet of a web application. Services refer to the software & business logic separate from the client. Services dont have a view component
 "List the two most common data transfer formats for web services."
-//
+// JSON and xml
 "List the two main types of data stores that back web applications and web services."
-//
+// Database and files
 "Describe a request-response protocol."
-//
+// Client server db and back
 "Describe the three main parts of an HTTP request."
-//
+// 
 "Describe the two required HTTP request methods."
 //
 "Describe the four most common HTTP request methods used by web services."
@@ -984,9 +1052,9 @@ spring boot
 "Explain the architectural principles of REST."
 //
 "Explain the Richardson Maturity Model."
-//
+// POM, resources, specific verbs, 
 "Describe JSON."
-//
+// JS object notation
 "Explain how key/value pairs and arrays are used in JSON."
 //
 "Describe Spring."
