@@ -976,18 +976,52 @@ _Microservices_ - Small independent services, high cohesion, follow single respo
     - Complexity
     - Lots of moving parts
 
-_Configuration Servers_
+_Configuration Servers_ 
+  1. create git repo for config
   1. Initializr dependencies - Config Server
-  1. `@EnableConfigServer` to main
-  2. 
+  1. `@EnableConfigServer` to main app file class
+  1. `application.properties`
+    1. `server.port`=9999
+    1. `spring.cloud.config.server.git.uri`=gitRepoLink 
 
-_Config Client_
+_Config Client_ - For each service
   1. Initializr dependencies - Web starter, Config Client, Spring Boot Actuator
-  1. 
-  1. `server.port=7979` (git hub)
-  1. `management.endpoints.web.exposure.include=*` (git hub)
+  1. `bootstrap.properties`
+    1. `spring.application.name`=name of service
+    1. `spring.cloud.config.uri`=http://localhost:9999(server localhost address)
+  1. `@EnableConfigServer` in main app class level
 
-**u2m1l2 activities**
+  git file 
+``` java
+server.port=7979 // arbitrary port num for browser
+management.endpoints.web.exposure.include=* // env variables to use with `@value` annotation in controller
+serviceName=service-name-in-project
+serviceProtocol=http://
+servicePath=/enpoint // from service controller
+```
+
+  1. Service controller for the logic(or reference to service layer)
+    1. `@RestController` as usual, let spring know this is a controller
+    1. `@RefreshScope` class level annotation for ability to refresh without restarting entire server
+    1. Autowire DiscoveryClient
+    1. Instantiate new RestTemplate
+    1. `@Value("${officialGreeting}")` - method level annotation used to bind env variables to locals
+    1. In the mapping body goes the logic
+
+
+_Service registry_- uses multiple services at once
+  1. Spring initializr- `Eureka Server`
+  1. `@EnableEurekaServer` class level annotation in the main class
+  1. `application.properties`
+``` java
+server.port=8761 // arbitrary
+eureka.instance.hostname=localhost
+// shut off the client functionality of the Eureka server
+eureka.client.registerWithEureka=false
+eureka.client.fetchRegistry=false
+eureka.client.serviceUrl.defaultZone=http://${eureka.insance.hostname}:${server.port}/eureka
+```
+
 
  _________________________________________________
 **_7/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
