@@ -30,9 +30,6 @@
 
 
 
-
-
-
 # [Evan Wilson](https://ewilsons.github.io/)
 
 > "They think technology just automatically improves. It only improves when alot of people work very hard to make it better" -Elon Musk  
@@ -1067,12 +1064,16 @@ spring boot
 
 "Compare and contrast web applications and web services. "
 // A web service is a componet of a web application. Services refer to the software & business logic separate from the client. Services dont have a view component
+
 "List the two most common data transfer formats for web services."
 // JSON and xml
+
 "List the two main types of data stores that back web applications and web services."
 // Database and files
+
 "Describe a request-response protocol."
 // Client server db and back
+
 "Describe the three main parts of an HTTP request."
 // 
 "Describe the two required HTTP request methods."
@@ -1087,8 +1088,10 @@ spring boot
 //
 "Explain the Richardson Maturity Model."
 // POM, resources, specific verbs, 
+
 "Describe JSON."
 // JS object notation
+
 "Explain how key/value pairs and arrays are used in JSON."
 //
 "Describe Spring."
