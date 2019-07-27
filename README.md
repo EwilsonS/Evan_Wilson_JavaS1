@@ -53,6 +53,7 @@ _________________________________________________
 `git branch -D name-of-branch` delete
 `git clean -d -f` undo error pull
 `git stash` put away git changes
+`git stash apply` unstash
 `git config --system core.longpaths true` in bash admin allow long paths
 
 _________________________________________________
@@ -1126,5 +1127,16 @@ spring boot
 //
 "Explain how a browser renders conten"
 //
+
+"Describe Lambda Expressions"
+"Explain Functional Interface"
+"Describe how to Default Methods"
+"What are Streams"
+// provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
+
+"Date/Time API Changes"
+
+
+// char[] arr = str.toCharArray(); don't forget the 'single quotes'
 
 ```
