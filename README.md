@@ -25,6 +25,7 @@
 [`Mocking`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mocking)
 [`Validation`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#validation)
 [`Microservices`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#microservices)
+[`Predicate`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#predicate)
 
 
 
@@ -1069,11 +1070,8 @@ spring boot
 "List the two most common data transfer formats for web services."
 // JSON and xml
 
-"List the two main types of data stores that back web applications and web services."
-// Database and files
-
-"Describe a request-response protocol."
-// Client server db and back
+"List the two main types of data stores that back web applications and web services." // Database and files
+"Describe a request-response protocol." // Client, server, db and back
 
 "Describe the three main parts of an HTTP request."
 // 
@@ -1087,11 +1085,8 @@ spring boot
 //
 "Explain the architectural principles of REST."
 //
-"Explain the Richardson Maturity Model."
-// POM, resources, specific verbs, 
-
-"Describe JSON."
-// JS object notation
+"Explain the Richardson Maturity Model." // POM, resources, specific verbs, hypermedia controls Hateoas
+"Describe JSON." // JS object notation
 
 "Explain how key/value pairs and arrays are used in JSON."
 //
@@ -1130,13 +1125,35 @@ spring boot
 
 "Describe Lambda Expressions"
 "Explain Functional Interface"
-"Describe how to Default Methods"
-"What are Streams"
-// provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
+"Describe how to use default Methods"
+"What are Streams" // Streams provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
 
 "Date/Time API Changes"
+"map.KeySet()" // return a Set of keys
+"map.values()" // returns a Collection
 
+char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
-// char[] arr = str.toCharArray(); don't forget the 'single quotes'
+```
+<a name="predicate"></a>
+
+``` java 
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class JavaPredicateEx2 {
+
+    public static void main(String[] args) {
+
+        List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
+        
+        // predicate can be used without lambdas. Its an interface, so any class can implement it
+        Predicate<Integer> btf = n -> n > 5;
+        
+        //negate() will get the opposite
+        nums.stream().filter(btf).forEach(System.out::println);
+    }
+}
 
 ```
