@@ -877,7 +877,7 @@ public classCustomer {
   private String lastName;
   private String company;
   private String phone;
-  // the "one" side to a one to may relationsihp, cascade - delets info of related tables, .EAGER(load dependent class objs right away) .LAZY(loads dependent class objs when called upon)
+  // the "one" side to a one to may relationsihp, cascade - deletes info of related tables, .EAGER(load dependent class objs right away) .LAZY(loads dependent class objs when called upon)
   @OneToMany(mappedBy="customerId", cascade= CascadeType.ALL, fetch= FetchType.EAGER)
   private Set<Note> notes;
   // Getters, setters, equals, and hashCode left out of this listing for brevity}
@@ -927,7 +927,7 @@ Validation annotations  <a name="validation"></a>
 @NotNull // validates that the annotated property value is not null
 @AssertTrue // validates that the annotated property value is true
 @Size // validates that the annotated property value has a size between the attributes min and max; can be applied to String, Collection, Map, and array properties
-@Min // vValidates that the annotated property has a value no smaller than the value attribute
+@Min // Validates that the annotated property has a value no smaller than the value attribute
 @Max // validates that the annotated property has a value no larger than the value attribute
 @Email // validates that the annotated property is a valid email address Some annotations accept additional attributes, but the message attribute is common to all of them. This is the message that will usually be rendered when the value of the respective property fails validation. 
 @NotEmpty // validates that the property is not null or empty; can be applied to String, Collection, Map or Array values
@@ -1019,6 +1019,7 @@ eureka.instance.hostname=localhost
 eureka.client.registerWithEureka=false
 eureka.client.fetchRegistry=false
 eureka.client.serviceUrl.defaultZone=http://${eureka.insance.hostname}:${server.port}/eureka
+
 ```
 
 
@@ -1032,6 +1033,9 @@ _Service Registry_ - a database of services
   - Service discovery- similar to dns->used to find ip address of a site.
 
 
+``` java 
+// curl localhost:7979/actuator/refresh -d {} -H "Content-Type: application/json" 
+```
 
 
 
@@ -1120,17 +1124,21 @@ spring boot
 //
 "Explain the Document Object Model (DOM)"
 //
-"Explain how a browser renders conten"
+"Explain how a browser renders content"
 //
 
 "Describe Lambda Expressions"
 "Explain Functional Interface"
-"Describe how to use default Methods"
+"Describe how to use default Methods" //
 "What are Streams" // Streams provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
 
 "Date/Time API Changes"
 "map.KeySet()" // return a Set of keys
 "map.values()" // returns a Collection
+"Consumer<T>" //
+"Supply<T>" // 
+"Optional<T>" //
+"Predicate<T>" // 
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
