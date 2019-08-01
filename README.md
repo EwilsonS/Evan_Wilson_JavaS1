@@ -26,6 +26,8 @@
 [`Validation`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#validation)
 [`Microservices`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#microservices)
 [`Predicate`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#predicate)
+[`Queue`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#queue)
+[`Cache`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#queue)
 
 
 
@@ -437,7 +439,7 @@ new CsvToBeanBuilder<Motorcycle>(new FileReader("motorcycles.csv")).withType(Mot
 ```java
 List<Motorcycle> bikes = new CsvToBeanBuilder<Motorcycle>(new FileReader("motorcycles.csv")).withType(Motorcycle.class).build().parse();
 
-            // Print the information for all Suzuki motorcycles in inventory
+            // Print the information for all Suzuki motorcycles in inventory 
             String make = "Suzuki";
             System.out.println("All " + make + " motorcycles in inventory: ");
             bikes                                          // list type Motorcycle
@@ -1036,8 +1038,21 @@ _Service Registry_ - a database of services
 ``` java 
 // curl localhost:7979/actuator/refresh -d {} -H "Content-Type: application/json" 
 ```
+_________________________________________________
+**_7/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="queue"></a>
 
+_Queues_ - FIFO
+  - sync - waits for response
+  - async - does not wait for response
+  - AMQP - advanced messaging queueing protocol
 
+_Cache_ - Storing a copy of data for future use
+  - saves a copy and accesses that copy
+  - might be old data, not very effective when data changes often
+  - best with non user specific data
+
+_Buffering_ - preloads data from original source
 
 <!-- ==================================================================================================================== -->
  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)
@@ -1068,77 +1083,53 @@ spring boot
 ###Q and A
 ``` java
 
-"Compare and contrast web applications and web services. "
-// A web service is a componet of a web application. Services refer to the software & business logic separate from the client. Services dont have a view component
-
-"List the two most common data transfer formats for web services."
-// JSON and xml
-
+"Compare and contrast web applications and web services." // A web service is a componet of a web application. Services refer to the software & business logic separate from the client. Services dont have a view component
+"List the two most common data transfer formats for web services." // JSON and xml
 "List the two main types of data stores that back web applications and web services." // Database and files
 "Describe a request-response protocol." // Client, server, db and back
-
-"Describe the three main parts of an HTTP request."
-// 
-"Describe the two required HTTP request methods."
-//
-"Describe the four most common HTTP request methods used by web services."
-//
-"Describe the three main parts of an HTTP response."
-//
-"Describe the five groups of HTTP response codes."
-//
-"Explain the architectural principles of REST."
-//
+"Describe the three main parts of an HTTP request." // 
+"Describe the two required HTTP request methods." //
+"Describe the four most common HTTP request methods used by web services." // GET, PUT, POST, DELETE
+"Describe the three main parts of an HTTP response." // response line, header, body
+"Describe the five groups of HTTP response codes." // 1xx-info, 2xx-success, 3xx-redirect, 4xx-client err, 5xx-server err
+"Explain the architectural principles of REST." //
 "Explain the Richardson Maturity Model." // POM, resources, specific verbs, hypermedia controls Hateoas
 "Describe JSON." // JS object notation
-
-"Explain how key/value pairs and arrays are used in JSON."
-//
-"Describe Spring."
-//
-"Describe Spring Boot."
-//
-"Explain the relationship between Spring Boot and the Spring Initializr."
-//
-"Explain the Spring Boot project structure."
-//
-"Explain the purpose of a Servlet container."
-//
-"Compare and contrast a Servlet container and the Servlet API."
-//
-"Explain Tomcats relationship with Servlet containers and the Servlet API."
-//
-"Describe Spring MVC."
-//
-"Explain the Front Controller Pattern."
-//
-"Describe the MVC Pattern."
-//
-"Explain the following sections of the OpenAPI 3.x specification:"
-//
-"Metadata, Servers, Paths, Parameters, Request body, Responses, Data Definitions and refs"
-//
-"Explain the following Spring annotations:"
-//
-"@RestController, @RequestMapping, @RequestBody, @ResponseBody, @PathVariable, @Valid"
-//
-"Explain the Document Object Model (DOM)"
-//
-"Explain how a browser renders content"
-//
-
+"Explain how key/value pairs and arrays are used in JSON." //
+"Describe Spring." //
+"Describe Spring Boot." //
+"Explain the relationship between Spring Boot and the Spring Initializr." //
+"Explain the Spring Boot project structure." //
+"Explain the purpose of a Servlet container." //
+"Compare and contrast a Servlet container and the Servlet API." //
+"Explain Tomcats relationship with Servlet containers and the Servlet API." //
+"Describe Spring MVC." //
+"Explain the Front Controller Pattern." //
+"Describe the MVC Pattern." //
+"Explain the following sections of the OpenAPI 3.x specification:" //
+"Metadata, Servers, Paths, Parameters, Request body, Responses, Data Definitions and refs" //
+"Explain the following Spring annotations:" //
+"@RestController, @RequestMapping, @RequestBody, @ResponseBody, @PathVariable, @Valid" //
+"Explain the Document Object Model (DOM)" //
+"Explain how a browser renders content" //
 "Describe Lambda Expressions"
 "Explain Functional Interface"
 "Describe how to use default Methods" //
 "What are Streams" // Streams provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
-
 "Date/Time API Changes"
 "map.KeySet()" // return a Set of keys
 "map.values()" // returns a Collection
-"Consumer<T>" //
+"Consumer<T>" // 
 "Supply<T>" // 
 "Optional<T>" //
-"Predicate<T>" // 
+"Predicate<T>" // Return Boolean use with filter
+"REST" //
+"RESTful"//
+"JAX-RS" //
+"marshal" //
+"unmarshal"//
+"durable" // queues will persist if service fails
+"marker interface" // indicates that an implementing class can be serialized and deserialized. Marker interfaces have no properties or defined methods.
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
