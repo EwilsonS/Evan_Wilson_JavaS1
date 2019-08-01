@@ -879,7 +879,7 @@ public classCustomer {
   private String lastName;
   private String company;
   private String phone;
-  // the "one" side to a one to may relationsihp, cascade - deletes info of related tables, .EAGER(load dependent class objs right away) .LAZY(loads dependent class objs when called upon)
+  // the "one" side to a one to may relationsihp, cascade - delets info of related tables, .EAGER(load dependent class objs right away) .LAZY(loads dependent class objs when called upon)
   @OneToMany(mappedBy="customerId", cascade= CascadeType.ALL, fetch= FetchType.EAGER)
   private Set<Note> notes;
   // Getters, setters, equals, and hashCode left out of this listing for brevity}
@@ -929,7 +929,7 @@ Validation annotations  <a name="validation"></a>
 @NotNull // validates that the annotated property value is not null
 @AssertTrue // validates that the annotated property value is true
 @Size // validates that the annotated property value has a size between the attributes min and max; can be applied to String, Collection, Map, and array properties
-@Min // Validates that the annotated property has a value no smaller than the value attribute
+@Min // vValidates that the annotated property has a value no smaller than the value attribute
 @Max // validates that the annotated property has a value no larger than the value attribute
 @Email // validates that the annotated property is a valid email address Some annotations accept additional attributes, but the message attribute is common to all of them. This is the message that will usually be rendered when the value of the respective property fails validation. 
 @NotEmpty // validates that the property is not null or empty; can be applied to String, Collection, Map or Array values
@@ -1021,7 +1021,6 @@ eureka.instance.hostname=localhost
 eureka.client.registerWithEureka=false
 eureka.client.fetchRegistry=false
 eureka.client.serviceUrl.defaultZone=http://${eureka.insance.hostname}:${server.port}/eureka
-
 ```
 
 
@@ -1133,26 +1132,7 @@ spring boot
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
-```
-<a name="predicate"></a>
 
-``` java 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Predicate;
-
-public class JavaPredicateEx2 {
-
-    public static void main(String[] args) {
-
-        List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
-        
-        // predicate can be used without lambdas. Its an interface, so any class can implement it
-        Predicate<Integer> btf = n -> n > 5;
-        
-        //negate() will get the opposite
-        nums.stream().filter(btf).forEach(System.out::println);
-    }
-}
+// char[] arr = str.toCharArray(); don't forget the 'single quotes'
 
 ```
