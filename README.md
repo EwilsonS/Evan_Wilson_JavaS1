@@ -25,9 +25,11 @@
 [`Mocking`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#mocking)
 [`Validation`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#validation)
 [`Microservices`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#microservices)
-[`Predicate`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#predicate)
 [`Queue`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#queue)
 [`Cache`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#queue)
+[`Edge Service`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#edge)
+[`Predicate`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
+[`Consumer`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
 
 
 
@@ -315,7 +317,7 @@ _Java Collections_
   - Interface
   - Collections dont work with primitives
 
-_Iterators_  
+_Iterator_ - interface  
   - Object that allows us to access each element in a collection
   - Two methods  
     - hasNext()
@@ -1041,6 +1043,7 @@ _________________________________________________
 **_7/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="queue"></a>
 
+
 _Queues_ - FIFO
   - sync - waits for response
   - async - does not wait for response
@@ -1053,31 +1056,26 @@ _Cache_ - Storing a copy of data for future use
 
 _Buffering_ - preloads data from original source
 
+
+
+_________________________________________________
+**_7/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="edge"></a>
+
+_Edge Sevice_ - The entry point into a service that sits in front of an api
+  - used to meet the needs for different clients
+  - exposed to the public internet
+  - improve security thru authentication
+  - improve performance thru load balancing
+  - encapsulates the internal structure of the app
+  - even more complexity and must be highly available
+
+
+
 <!-- ==================================================================================================================== -->
  [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top)
 <a name="random"></a> 
-Revolving Box of Randoms
 
- ``` java 
-deserialization - json to java
-serialization- java to json
-servlet container
-tomcat - implementation of the servelet container by Spring boot
-@requestbody // maps the HttpRequest body to a transfer object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object.
-@responsebody // tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
-rest architectural style
-yaml structure
-mvc vs spring mvc - 
-DOM ? -
-
-transactional manager
-@Transactional (params?)
-
-what is spring
-spring boot
-.class at the end of an object referece
-
-```
 
 ###Q and A
 ``` java
@@ -1095,9 +1093,9 @@ spring boot
 "Explain the Richardson Maturity Model." // POM, resources, specific verbs, hypermedia controls Hateoas
 "Describe JSON." // JS object notation
 "Explain how key/value pairs and arrays are used in JSON." //
-"Describe Spring." //
+"Describe Spring." // 
 "Describe Spring Boot." //
-"Explain the relationship between Spring Boot and the Spring Initializr." //
+"Explain the relationship between Spring Boot and the Spring Initializr." // Initializr is the web interface used to spin up projects
 "Explain the Spring Boot project structure." //
 "Explain the purpose of a Servlet container." //
 "Compare and contrast a Servlet container and the Servlet API." //
@@ -1110,18 +1108,48 @@ spring boot
 "Explain the following Spring annotations:" //
 "@RestController, @RequestMapping, @RequestBody, @ResponseBody, @PathVariable, @Valid" //
 "Explain the Document Object Model (DOM)" //
-"Explain how a browser renders content" //
+"Explain how a browser renders content" // 
 "Describe Lambda Expressions"
-"Explain Functional Interface"
+"Explain Functional Interface" // 
 "Describe how to use default Methods" //
 "What are Streams" // Streams provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
 "Date/Time API Changes"
 "map.KeySet()" // return a Set of keys
 "map.values()" // returns a Collection
-"Consumer<T>" // 
+"Consumer<T>" 
+// functional interface that represents an operation that accepts a single input and returns no result. Expected to operate via "side effects". ex.) 
+List<Integer> nums = new ArrayList<>();
+  nums.add(1);
+  nums.add(2);
+
+  List<Integer> nums2 = new ArrayList<>();
+
+  // Consumer Example to mult 100 to each element in nums and add to nums2
+  Consumer<List<Integer>> display = list -> list.forEach(a -> {
+      nums2.add(a * 100);
+      System.out.println(nums2);
+  });
+
+  // Consumer to print nums to screen
+  Consumer<List<Integer>> printNums = list -> list.forEach(a -> System.out.println("Here is an element in the nums Array List: "+a));
+
+  // Implement display using accept()
+  display.accept(nums); // runs display consumer on nums arrayList
+  printNums.accept(nums2); // runs printNums consumer on nums2 arrayList
+  display.andThen(printNums).accept(nums); // runs both consumer on nums array
+
+
 "Supply<T>" // 
 "Optional<T>" //
 "Predicate<T>" // Return Boolean use with filter
+List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
+        
+  // predicate can be used without lambdas. Its an interface, so any class can implement it
+  Predicate<Integer> btf = n -> n > 5;
+  
+  //negate() will get the opposite
+  nums.stream().filter(btf).forEach(System.out::println);
+
 "REST" //
 "RESTful"//
 "JAX-RS" //
@@ -1129,10 +1157,19 @@ spring boot
 "unmarshal"//
 "durable" // queues will persist if service fails
 "marker interface" // indicates that an implementing class can be serialized and deserialized. Marker interfaces have no properties or defined methods.
+".class at the end of an object referece"
+"deserialization"// json to java
+"serialization" //java to json
+"servlet container"
+"tomcat"// implementation of the servelet container by Spring boot
+@requestbody // maps the HttpRequest body to a transfer object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object.
+@responsebody // tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
+"transactional manager" //
+@Transactional (params? // 
+"Boyce-Codd normalization"//
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
 
 // char[] arr = str.toCharArray(); don't forget the 'single quotes'
-
 ```
