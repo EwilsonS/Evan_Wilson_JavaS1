@@ -1084,7 +1084,7 @@ _Edge Sevice_ - The entry point into a service that sits in front of an api
 "List the two most common data transfer formats for web services." // JSON and xml
 "List the two main types of data stores that back web applications and web services." // Database and files
 "Describe a request-response protocol." // Client, server, db and back
-"Describe the three main parts of an HTTP request." // 
+"Describe the three main parts of an HTTP request." // request line, header, body
 "Describe the two required HTTP request methods." //
 "Describe the four most common HTTP request methods used by web services." // GET, PUT, POST, DELETE
 "Describe the three main parts of an HTTP response." // response line, header, body
@@ -1110,10 +1110,12 @@ _Edge Sevice_ - The entry point into a service that sits in front of an api
 "Explain the Document Object Model (DOM)" //
 "Explain how a browser renders content" // 
 "Describe Lambda Expressions"
-"Explain Functional Interface" // 
+"Explain Functional Interface" // Interface that has one and only one absrtact method
 "Describe how to use default Methods" //
+"Types of sql joins" // 
 "What are Streams" // Streams provide a mechanism for processing a set of data in various ways that can include filtering, transformation, or any other way that may be useful to an application.
 "Date/Time API Changes"
+"Static variables"// static variables are, essentially, global variables. All instances of the class share the same static variable.
 "map.KeySet()" // return a Set of keys
 "map.values()" // returns a Collection
 "Consumer<T>" 
@@ -1160,13 +1162,14 @@ List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
 ".class at the end of an object referece"
 "deserialization"// json to java
 "serialization" //java to json
-"servlet container"
+"servlet container" //
 "tomcat"// implementation of the servelet container by Spring boot
 @requestbody // maps the HttpRequest body to a transfer object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object.
 @responsebody // tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
 "transactional manager" //
 @Transactional (params? // 
 "Boyce-Codd normalization"//
+"Spring Securities" //
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
