@@ -1,0 +1,163 @@
+openapi: 3.0.0
+info:
+  title: Tasker Service
+  description:
+    A simple task-tracking web service.
+  version: 0.0.1
+servers:
+  - url: 'http//localhost:5050'
+    description: Local dev server
+  - url: 'http//localhost:7575'
+    description: Ad service port
+paths:
+  /tasks:
+    post:
+      summary: Creates a new task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '201':
+          description: A game object is returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+        '400':
+          description: Invalid request sytax
+        '422':
+          description: Incomplete information. Some required fields missing.
+    get:
+      summary: Returns all Task objects in the db and appends an ad from adserver service
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+  /task/{id}:
+    get:
+      summary: Retrieves the enrty for the task with the given id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Id of the task you want
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Task object matching the given id
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+    delete:
+      summary: Deletes the entry for the Task with the Given id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: id of the Task you want to delete
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Task successfully deleted
+    put:
+      summary: Update the entry for Task with a given id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: id of the Task you want to update
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskViewModel'
+      responses:
+        '200':
+          description: Task successfully updated.
+        '422':
+          description: Task ID on path must match the ID in the Game object
+  /task/category{category}:
+    get:
+      summary: Retrieves sll enrties for the Task with the given category
+      parameters:
+        - name: category
+          in: path
+          required: true
+          description: name of the category you want
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Task List matching the name
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+  /ad:
+    get:
+      summary: Retrieves a random ad from Adserver service
+      responses:
+        '200':
+          description: Random ad string
+          content:
+            application/json:
+              schema:
+                type: String
+ 
+# ===== Models =========================
+components:
+  schemas:
+    Task:
+      properties:
+       
+        task_description:
+          type: string
+        create_date:
+          type: string
+        due_date:
+          type: string
+        category:
+          type: string
+      required:
+        - task_id
+        - description
+        - create_date
+        - due_date
+    TaskViewModel:
+      properties:
+        task_id:
+          type: integer
+        task_description:
+          type: string
+        create_date:
+          type: string
+        due_date:
+          type: string
+        category:
+          type: string
+        advertisement:
+          type: string
+      required:
+        - task_id
+        - description
+        - create_date
+        - due_date
+        - advertisement
