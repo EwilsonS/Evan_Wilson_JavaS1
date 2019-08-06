@@ -231,7 +231,7 @@ _Instantiate_ - by using the "new" keyword
   - JVM will store new instance in **heap** memory and gives a reference  
 
 _Stack/ Heap_  
-  - Stack memory only exists ifor the duration of the code block they are in  
+  - Stack memory only exists for the duration of the code block they are in  
   - Local primitive values live on the stack
   - The reference variable the point to the heap lives in the stack.  
   OBjs created with the _new_ operator live on the heap and we use references to access them  
@@ -603,8 +603,8 @@ _Tomcat_ - reference implemetaion of the servlet container
   - Implements the Servlet specification
   - components 
     - `Catalina` - servlet container
-    - `Coyote` - 
-    - `Jasper` - provides support for JavaPages
+    - `Coyote` - http support 
+    - `Jasper` - provides support for JavaPages jsp
 
 _Servlet API_
   - web service - collection of requests, requests routing and servlets
@@ -958,7 +958,7 @@ _Twelve-Factor app_  - software as a service Saas
   - Disposability
   - Dev/Prod parity
   - Logs
-  - Admin Proces
+  - Admin Process
 
 _Cloud-Native apps_
   - Main ideas
@@ -1170,9 +1170,37 @@ List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
 @Transactional (params? // 
 "Boyce-Codd normalization"//
 "Spring Securities" //
+"try with resources" // 
+"Singleton" // one "single" instance allowed. This is useful when exactly one object is needed to coordinate actions across the system. - spring default to singleton
+"Scopes"// run the app (global/session), make request(request), then usese either proto or singlton 
+// singleton-only one, 
+//prototype-many, 
+//request-instance only lives in the request, 
+//session - one instance lives until logout
+//global - 
+"Testing run with coverge" // shows lines of code that are tested
+"What is referentioal integrity?" //
+"What is depedndency injection?" // When the container provides an instance of the object
+"What is List and how is it used in java?" // List is an interface that extends the Collection and Iterable interfaces. All inplementations: AbstractList, AbstractSequentialList, ArrayList, AttributeList, CopyOnWriteArrayList, LinkedList, RoleList, RoleUnresolvedList, Stack, Vector
+"JSR303"// bean validation
+"ArgumentCaptor" // unit testing for void methods
+  service.updateBook(bvm);
+  ArgumentCaptor<Book> taskCaptor = ArgumentCaptor.forClass(Book.class);
+  verify(bookDao).update(taskCaptor.capture());
+  assertEquals(bvm.getAuthor(), taskCaptor.getValue().getAuthor());
+
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
 
-// char[] arr = str.toCharArray(); don't forget the 'single quotes'
+```
+
+``` javascript
+// Passport review
+// •	Parsing through an array and manipulating strings/data
+// •	Prototypical inheritance
+// •	Asynchronous functions (particularly how they behave in a loop)...i.e. the event loop
+// •	ES6/ESNext features
+// •	Hoisting
+
 ```
