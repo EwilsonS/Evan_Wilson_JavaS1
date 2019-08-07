@@ -1185,10 +1185,10 @@ List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
 "JSR303"// bean validation
 "ArgumentCaptor" // unit testing for void methods
   service.updateBook(bvm);
-  ArgumentCaptor<Book> taskCaptor = ArgumentCaptor.forClass(Book.class);
-  verify(bookDao).update(taskCaptor.capture());
-  assertEquals(bvm.getAuthor(), taskCaptor.getValue().getAuthor());
-
+  ArgumentCaptor<Book> bookCaptor = ArgumentCaptor.forClass(Book.class);
+  verify(bookDao).update(bookCaptor.capture());
+  assertEquals(bvm.getAuthor(), bookCaptor.getValue().getAuthor());
+" Software Entropy" // It is the invisible hand that breaks component interactions that weren’t in scope, causes production servers to inexplicably crash, and withholds a timely and cost-effective hotfix.
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 
@@ -1200,7 +1200,15 @@ char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 // •	Parsing through an array and manipulating strings/data
 // •	Prototypical inheritance
 // •	Asynchronous functions (particularly how they behave in a loop)...i.e. the event loop
-// •	ES6/ESNext features
-// •	Hoisting
+"ES6/ESNext features" //
+"Hoisting" // hoisting moves all declarations to the top of the current scope. Let and const are not hoisted. Using Let will allow reassignment of a variable inside a blosk without changing it outside the block.
+
+/*
+Q's
+What are you excited about?
+What are the company goals?
+What are the common challenges people in this possition face
+
+*/
 
 ```
