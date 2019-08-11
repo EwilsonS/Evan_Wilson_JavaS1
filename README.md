@@ -30,6 +30,9 @@
 [`Edge Service`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#edge)
 [`Predicate`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
 [`Consumer`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#random)
+[`Security`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#security)
+[`Oauth`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#oauth)
+[`PWS`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#pws)
 
 
 
@@ -1059,7 +1062,7 @@ _Buffering_ - preloads data from original source
 
 
 _________________________________________________
-**_7/25/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+**_8/3/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="edge"></a>
 
 _Edge Sevice_ - The entry point into a service that sits in front of an api
@@ -1069,6 +1072,59 @@ _Edge Sevice_ - The entry point into a service that sits in front of an api
   - improve performance thru load balancing
   - encapsulates the internal structure of the app
   - even more complexity and must be highly available
+
+
+_________________________________________________
+**_8/7/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="security"></a>
+
+_Spring Security_
+  - Penetration testing
+  - Ethical hacking
+  - Authentication
+  - Authorization
+  - Principal - object that represents a logged in user
+    - name, autorities etc.
+  - 
+
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="oauth"></a>
+
+
+
+
+
+
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="pws"></a>
+
+_Pivotal Web Services_
+  - IaaS -Infrastructure as a service (IaaS) is a form of cloud computing that provides virtualized computing resources over the internet.
+
+  - __Software as a Service (SaaS)__ - The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure2 . The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g.,web-based email), or a program interface. The consumer does not manage or control theunderlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited userspecific application configuration settings.
+  - __Platform as a Service (PaaS)__ - The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider.3 The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
+  - __Infrastructure as a Service (IaaS)__ - The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls).
+
+
+__On-demand self-service__ -  A consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human
+interaction with each service provider.
+
+__Broad network access__ - Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g.,
+mobile phones, tablets, laptops, and workstations).
+
+__Resource pooling__ - The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. There is a sense of location independence in that the customer generally has no control or knowledge over the exact location of the provided resources but may be able to specify location at a higher level of abstraction (e.g., country, state, or datacenter). Examples of resources include storage, processing, memory, and network bandwidth.
+
+__Rapid elasticity__ - Capabilities can be elastically provisioned and released, in some cases
+automatically, to scale rapidly outward and inward commensurate with demand. To the
+consumer, the capabilities available for provisioning often appear to be unlimited and can
+be appropriated in any quantity at any time.
+
+__Measured service__ - Cloud systems automatically control and optimize resource use by leveraging a metering capability1 at some level of abstraction appropriate to the type of service (e.g.,storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and
+consumer of the utilized service.
 
 
 
@@ -1191,7 +1247,38 @@ List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
 " Software Entropy" // It is the invisible hand that breaks component interactions that weren’t in scope, causes production servers to inexplicably crash, and withholds a timely and cost-effective hotfix.
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
+/*
 
+write a query to display user's names who are on the same team
+
+  |     users         |
+  |-------------------|
+  |name  | fave_color |
+  |-------------------|
+  |Bob   | red        |
+  |Gwen  | blue       |
+  |Ernald| green      |
+  |Mavis | blue       |
+  ---------------------
+
+
+  |      teams        |
+  |-------------------|
+  |  id  | team_color |
+  |-------------------|
+  |1     | red        |
+  |2     | blue       |
+  |3     | green      |
+  ---------------------
+
+---
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+
+returns table with 2 columns, the number of people people and their country only if there are more than 5 people from there
+*/
 
 ```
 
