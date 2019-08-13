@@ -33,6 +33,7 @@
 [`Security`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#security)
 [`Oauth`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#oauth)
 [`PWS`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#pws)
+[`Circuit Breaker`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#circuit)
 
 
 
@@ -1103,8 +1104,6 @@ _________________________________________________
 <a name="pws"></a>
 
 _Pivotal Web Services_
-  - IaaS -Infrastructure as a service (IaaS) is a form of cloud computing that provides virtualized computing resources over the internet.
-
   - __Software as a Service (SaaS)__ - The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure2 . The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g.,web-based email), or a program interface. The consumer does not manage or control theunderlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited userspecific application configuration settings.
   - __Platform as a Service (PaaS)__ - The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider.3 The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
   - __Infrastructure as a Service (IaaS)__ - The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls).
@@ -1125,6 +1124,22 @@ be appropriated in any quantity at any time.
 
 __Measured service__ - Cloud systems automatically control and optimize resource use by leveraging a metering capability1 at some level of abstraction appropriate to the type of service (e.g.,storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and
 consumer of the utilized service.
+
+
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="circuit"></a>
+
+_Circuit Breaker Pattern_ 
+  - helps to reduce resources tied up on operations that are likely to fail
+    
+_Fault tolerance article_
+  - network timeouts and retires
+  - separate threads on per depependency thread pools
+  - semaphors - multithreading concept
+  - circuit breakers
+
+
 
 
 

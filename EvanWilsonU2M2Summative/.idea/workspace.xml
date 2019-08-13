@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbf97c33-a3b3-47a8-8a5b-bf7bd442bed4" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/config-server/target/" />
+    <ignored path="$PROJECT_DIR$/comment-service/target/" />
+    <ignored path="$PROJECT_DIR$/service-registry/target/" />
+    <ignored path="$PROJECT_DIR$/post-service/target/" />
+    <ignored path="$PROJECT_DIR$/stwitter-service/target/" />
+    <ignored path="$PROJECT_DIR$/comment-queue-consumer/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="19" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5184881">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="90" column="17" lean-forward="true" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/planning/Stwitter.yaml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3213">
+                  <caret line="189" column="17" selection-start-line="189" selection-start-column="17" selection-end-line="189" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="40">
+                  <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1357">
+                  <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#4005#4006#0" expanded="true" />
+                    <element signature="e#4060#4061#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Comment</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/util/messages/feign/CommentClient.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/model/MessageViewModel.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/MessageViewModel.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/model/PostViewModelReq.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/model/PostViewModelRes.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/dao/PostRepository.java" />
+        <option value="$PROJECT_DIR$/post-service/src/test/java/com/trilogyed/post/dao/PostDaoTest.java" />
+        <option value="$PROJECT_DIR$/post-service/src/main/resources/bootstrap.properties.kt" />
+        <option value="$PROJECT_DIR$/post-service/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/post-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/post-service/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/comment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/post-service/pom.xml" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/CommentServiceApplication.java" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/dao/CommentRepository.java" />
+        <option value="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/dao/PostDao.java" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/comment-service/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/model/Comment.java" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/dao/CommentDao.java" />
+        <option value="$PROJECT_DIR$/comment-service/src/test/java/com/trilogyed/comment/dao/CommentDaoTest.java" />
+        <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/util/feign/CommentClient.java" />
+        <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/CommentQueueConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/comment-queue-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/stwitter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/CommentViewModel.java" />
+        <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/util/messages/Comment.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/PostViewModelReq.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/CommentViewModelRes.java" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/PostViewModelRes.java" />
+        <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/MessageListener.java" />
+        <option value="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/dao/PostDaoJdbcTemplateImpl.java" />
+        <option value="$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/dao/CommentDaoJdbcTemplateImpl.java" />
+        <option value="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/model/Post.java" />
+        <option value="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java" />
+        <option value="$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/PostServiceApplication.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostClient.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/CommentClient.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/model/Comment.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/model/Post.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" />
+        <option value="$PROJECT_DIR$/planning/Stwitter.yml" />
+        <option value="$PROJECT_DIR$/planning/Stwitter.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="90" />
+    <option name="y" value="20" />
+    <option name="width" value="1835" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="planning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="feign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="viewmodel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvanWilsonU2M2Summative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvanWilsonU2M2Summative" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.trilogyed.stwitter.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ServiceLayerTest">
+    <configuration name="ServiceLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.stwitter.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trilogyed.stwitter.service" />
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.stwitter.service.ServiceLayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceLayerTest.getAllPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.stwitter.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trilogyed.stwitter.service" />
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.stwitter.service.ServiceLayerTest" />
+      <option name="METHOD_NAME" value="getAllPosts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceLayerTest.getCommentsByPostId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.stwitter.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trilogyed.stwitter.service" />
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.stwitter.service.ServiceLayerTest" />
+      <option name="METHOD_NAME" value="getCommentsByPostId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceLayerTest.getPostsByPoster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.stwitter.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trilogyed.stwitter.service" />
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.stwitter.service.ServiceLayerTest" />
+      <option name="METHOD_NAME" value="getPostsByPoster" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceLayerTest.updateComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stwitter-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.stwitter.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trilogyed.stwitter.service" />
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.stwitter.service.ServiceLayerTest" />
+      <option name="METHOD_NAME" value="updateComment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ServiceLayerTest" />
+      <item itemvalue="JUnit.ServiceLayerTest.getAllPosts" />
+      <item itemvalue="JUnit.ServiceLayerTest.getPostsByPoster" />
+      <item itemvalue="JUnit.ServiceLayerTest.getCommentsByPostId" />
+      <item itemvalue="JUnit.ServiceLayerTest.updateComment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ServiceLayerTest" />
+        <item itemvalue="JUnit.ServiceLayerTest.getPostsByPoster" />
+        <item itemvalue="JUnit.ServiceLayerTest.getCommentsByPostId" />
+        <item itemvalue="JUnit.ServiceLayerTest.updateComment" />
+        <item itemvalue="JUnit.ServiceLayerTest.getAllPosts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbf97c33-a3b3-47a8-8a5b-bf7bd442bed4" name="Default Changelist" comment="" />
+      <created>1565392725586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565392725586</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ServiceLayerTest_getCommentsByPostId - 2019.08.13 at 00h 26m 29s.xml">
+      <configuration name="ServiceLayerTest.getCommentsByPostId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest_getCommentsByPostId - 2019.08.13 at 00h 27m 01s.xml">
+      <configuration name="ServiceLayerTest.getCommentsByPostId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest_getCommentsByPostId - 2019.08.13 at 00h 27m 32s.xml">
+      <configuration name="ServiceLayerTest.getCommentsByPostId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest_getCommentsByPostId - 2019.08.13 at 00h 27m 54s.xml">
+      <configuration name="ServiceLayerTest.getCommentsByPostId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest_updateComment - 2019.08.13 at 00h 34m 38s.xml">
+      <configuration name="ServiceLayerTest.updateComment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest - 2019.08.13 at 00h 35m 19s.xml">
+      <configuration name="ServiceLayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest_getCommentsByPostId - 2019.08.13 at 00h 37m 21s.xml">
+      <configuration name="ServiceLayerTest.getCommentsByPostId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest_getPostsByPoster - 2019.08.13 at 00h 41m 15s.xml">
+      <configuration name="ServiceLayerTest.getPostsByPoster" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest_getPostsByPoster - 2019.08.13 at 00h 41m 37s.xml">
+      <configuration name="ServiceLayerTest.getPostsByPoster" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest - 2019.08.13 at 00h 42m 07s.xml">
+      <configuration name="ServiceLayerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18212366" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2966226" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006519" side_tool="true" weight="0.2861073" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.3287483" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32599118" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4993481" visible="true" weight="0.20117474" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3979442" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32892805" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.19153225" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.24967405" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comment-service/src/test/java/com/trilogyed/comment/dao/CommentDaoTest.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <expanded value="true" />
+    </buildFile>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EvanWilsonU2M2Summative$ServiceLayerTest.ic" NAME="ServiceLayerTest Coverage Results" MODIFIED="1565671309573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.trilogyed.stwitter.service.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.8.RELEASE/spring-test-5.1.8.RELEASE.jar!/org/springframework/test/context/junit4/statements/SpringRepeat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-service/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/util/feign/CommentClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/BrianServiceLayer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3315" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/2.1.2.RELEASE/spring-cloud-context-2.1.2.RELEASE.jar!/org/springframework/cloud/context/scope/GenericScope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="260" column="22" selection-start-line="260" selection-start-column="22" selection-end-line="260" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.8.RELEASE/spring-aop-5.1.8.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="511" selection-start-line="511" selection-end-line="511" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/CommentViewModelRes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="60" column="43" lean-forward="true" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+          <folding>
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-registry/mvnw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="117" column="2" lean-forward="true" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/CommentViewModelReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="105" selection-start-line="14" selection-start-column="105" selection-end-line="14" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/PostViewModelReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/viewmodel/PostViewModelRes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/CommentQueueConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-service/src/main/java/com/trilogyed/comment/dao/CommentDaoJdbcTemplateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planning/stwitter-system.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/model/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/PostServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/MessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-registry/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/dao/PostDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/evanco/commentqueueconsumer/util/messages/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/CommentClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MegServiceLayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-794" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/model/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post-service/src/main/java/com/trilogyed/post/dao/PostDaoJdbcTemplateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planning/WilsonStwitterUml.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planning/stwitter-system-project.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-153" />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planning/WilsonStwitterUml.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="90" column="17" lean-forward="true" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4005#4006#0" expanded="true" />
+            <element signature="e#4060#4061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/StwitterServiceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planning/Stwitter.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3213">
+          <caret line="189" column="17" selection-start-line="189" selection-start-column="17" selection-end-line="189" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
