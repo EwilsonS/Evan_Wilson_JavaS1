@@ -1092,7 +1092,7 @@ _Spring Security_
 _________________________________________________
 **_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
 <a name="oauth"></a>
-
+_Oauth_-industry standard protocol for authorization
 
 
 
@@ -1139,8 +1139,40 @@ _Fault tolerance article_
   - semaphors - multithreading concept
   - circuit breakers
 
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="jenkins"></a>
+
+_DevOps_ - 
+  - 
+  - pros - continuous deployment, faster scaling, improves communication and collaboration
+  - cons - user fatigue, need beta users, security concerns,  vaiable environment from B2B(consistency)  
+
+_Contuous inegration_ - development practice that requires developers to integrate code into a shared repository several times a day. 
+  - cons - reduced integration risk, higher quality code(for not having to worry about breaking anything). costs, dev resistence  
+  - pros - rapid development
+
+_Continuous Delivery_- the ability to get changes of all types into production, or into the hands of users, safely and quickly in a sustainable way.  
+  - enable teams to release a constant flow of software updates into production to quicken release cycles, lower costs, and reduce the risks associated with development.   
+  - Low risk releases, faster time to market,  higher quality
+
+_Containerization_(docker, kubernetes) - is an OS-level virtualization method used to deploy and run distributed applications without launching an entire virtual machine (VM) for each app. Multiple isolated applications or services run on a single host and access the same OS kernel.
+  - lightweight, isolated, vunerable
+   
+_Jenkins_ - leading automation srerver
+
+_Docker_
 
 
+_________________________________________________
+**_8/8/2019_**    [`Top`](https://github.com/EwilsonS/Evan_Wilson_JavaS1#top) 
+<a name="testing"></a>
+
+system and performance
+_System testing_ – This is the first time end to end testing of application on the complete and fully integrated software product before it is launch to the market.
+  - Black Box testing - System test involves the external workings of the software from the user's perspective.
+
+_Java Reflection_ - 
 
 
 <!-- ==================================================================================================================== -->
