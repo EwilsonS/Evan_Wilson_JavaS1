@@ -740,6 +740,19 @@ delete from car_lot where make = 'bmw';
 -- keeps you from deleteing w/o a key
 SET SQL_SAFE_UPDATES = 0;
 
+-- emplyee with max salary
+select * from employee where salary = (select MAX (salary) from employee) ;
+
+-- highest salary
+select MAX(salary) from eployee;
+
+-- second highest salary use NOT IN to filter
+select MAX(salary)
+from employee
+where salary NOT IN (select Max(salary) from employee) ;
+
+-- Declare an alias?
+
 ```
 
 _________________________________________________
@@ -1292,6 +1305,11 @@ List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
   verify(bookDao).update(bookCaptor.capture());
   assertEquals(bvm.getAuthor(), bookCaptor.getValue().getAuthor());
 " Software Entropy" // It is the invisible hand that breaks component interactions that weren’t in scope, causes production servers to inexplicably crash, and withholds a timely and cost-effective hotfix.
+"Caching vs buffering" // Caching stores a copy for later use, Buffering pulls from the original a little at a time. 
+"Exchange with a queue" // Binds routing key to the appropriate queue
+"producer" // writes to the exchange
+"consumer" // reads form the queue
+
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
 /*
@@ -1346,3 +1364,35 @@ What are the common challenges people in this possition face
 */
 
 ```
+
+ [![Build Status](https://dev.azure.com/definitelytyped/DefinitelyTyped/_apis/build/status/DefinitelyTyped.DefinitelyTyped?branchName=master)](https://dev.azure.com/definitelytyped/DefinitelyTyped/_build/latest?definitionId=1&branchName=master)
+
+
+
+<!-- Review sesh oop -->
+<!-- Inheritace 2-3 -->
+_Inheritance_  
+  - Is-a relationship
+  - protected modifier on methods construstors and variables allows access to all subclasses
+  - all java classes extends Object class by default  
+  - **Base class**
+    - parent class/ super class  
+  - **Derived Class**
+    - child, subclass, extended class
+    - inherits meths and props of superclass
+    - Specializes the base class
+    - Adds more meth and propls
+    - Overriding provides a differnt implementation of properties and methods  
+
+
+<!-- Polymorphism -->
+_Polymorphism_ 
+  - **Polymorphism** is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. `Any Java object that can pass more than one IS-A test is considered to be polymorphic.`
+  - many formed
+  - derived types are base types
+  - The type will determine what methods are available.
+  - recall the "is-A' rela tionship. A developer is not always a team Lead but a TL is always a dev.
+
+
+
+ ```
