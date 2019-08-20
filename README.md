@@ -534,7 +534,7 @@ _REST_
 
   In class API practice  
   create post /api/addRecord
-``` java
+``` 
   Method: Post 
   URI: /inventory
   Req Body: JSON of created rcord
@@ -542,21 +542,21 @@ _REST_
  ```
 
   retrieve /api/records?name=evan
-```java
+```
       Method: Get
       URI: /inventory
       Req Body: None
       Res body: Json returned
 ```
   update 
-```  java
+```  
       Method: Put
       URI: /inventory{id}
       Req Body: JSON of created rcord
       Res body: JSON returned
 ```
   delete
-```  java
+```  
       Method: DELETE
       URI: /inventory{id}
       Req Body: NONE
@@ -626,10 +626,10 @@ _MVC Patterns_
 _Spring Rest Controller_
   - `Dispatcher servlet` routes requests to Rest controller
 ```java  
-@RestController - // class_ level annotation
-@RequestMapping - // method/class level, 2 params(value = "/endpoint", Method = RequestMethod Get..) class level will ensure you hit that route first (ex. /api/endpoint)
-@ResponseStatus - // method level
-@PathVariable - 
+@RestController  // class_ level annotation
+@RequestMapping  // method/class level, 2 params(value = "/endpoint", Method = RequestMethod Get..) class level will ensure you hit that route first (ex. /api/endpoint)
+@ResponseStatus  // method level
+@PathVariable 
 ```
 _DTO _ - Object that carries data between processes
 
@@ -641,8 +641,8 @@ _________________________________________________
 _Error Handling_
 
 ``` java
-@RestControllerAdvice - class_ level
-@ExceptionHandler - method level
+@RestControllerAdvice // class_ level
+@ExceptionHandler // method level
 ```
 Aspect oriented programming(AOP)
 
@@ -1012,7 +1012,7 @@ _Config Client_ - For each service
   1. `@EnableConfigServer` in main app class level
 
   git file 
-``` java
+``` 
 server.port=7979 // arbitrary port num for browser
 management.endpoints.web.exposure.include=* // env variables to use with `@value` annotation in controller
 serviceName=service-name-in-project
@@ -1372,6 +1372,7 @@ What are the common challenges people in this possition face
 <!-- Review sesh oop -->
 <!-- Inheritace 2-3 -->
 _Inheritance_  
+  - Why? - reusability, clean maintainable.
   - Is-a relationship
   - protected modifier on methods construstors and variables allows access to all subclasses
   - all java classes extends Object class by default  
@@ -1391,7 +1392,7 @@ _Polymorphism_
   - many formed
   - derived types are base types
   - The type will determine what methods are available.
-  - recall the "is-A' rela tionship. A developer is not always a team Lead but a TL is always a dev.
+  - recall the "is-A' relationship. A developer is not always a team Lead but a TL is always a dev.
 
 
 
