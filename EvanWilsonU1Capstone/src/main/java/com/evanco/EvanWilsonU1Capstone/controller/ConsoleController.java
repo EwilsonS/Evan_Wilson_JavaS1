@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/consoles")
-public class ConsoleController {
+public class    ConsoleController {
 
     @Autowired
     ManageInventoryService service;

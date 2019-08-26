@@ -365,7 +365,7 @@ _Exceptions_
     -  something we catch or specify that our code may throw an error
   - unchecked  
     - Errors we cant or dont want ot recover from
-    - We do not have to catach jor specify these
+    - We do not have to catch or specify these
 `try`-code that might throw an exception  
 `catch`- catch err and do domething (message/ recover)  
 `finally`- run some code anyway  
@@ -1201,7 +1201,7 @@ _Java Reflection_ -
 "List the two main types of data stores that back web applications and web services." // Database and files
 "Describe a request-response protocol." // Client, server, db and back
 "Describe the three main parts of an HTTP request." // request line, header, body
-"Describe the two required HTTP request methods." //
+"Describe the two required HTTP request methods." // 
 "Describe the four most common HTTP request methods used by web services." // GET, PUT, POST, DELETE
 "Describe the three main parts of an HTTP response." // response line, header, body
 "Describe the five groups of HTTP response codes." // 1xx-info, 2xx-success, 3xx-redirect, 4xx-client err, 5xx-server err
@@ -1304,11 +1304,13 @@ List<Integer> nums = Arrays.asList(2, 3, 1, 5, 6, 7, 8, 9, 12);
   ArgumentCaptor<Book> bookCaptor = ArgumentCaptor.forClass(Book.class);
   verify(bookDao).update(bookCaptor.capture());
   assertEquals(bvm.getAuthor(), bookCaptor.getValue().getAuthor());
-" Software Entropy" // It is the invisible hand that breaks component interactions that weren’t in scope, causes production servers to inexplicably crash, and withholds a timely and cost-effective hotfix.
+"Software Entropy" // It is the invisible hand that breaks component interactions that weren’t in scope, causes production servers to inexplicably crash, and withholds a timely and cost-effective hotfix.
 "Caching vs buffering" // Caching stores a copy for later use, Buffering pulls from the original a little at a time. 
-"Exchange with a queue" // Binds routing key to the appropriate queue
-"producer" // writes to the exchange
-"consumer" // reads form the queue
+"Exchange with a queue and binding" // Binds routing key to the appropriate queue
+"queue producer" // writes to the exchange
+"queue consumer" // reads form the queue
+"tdd"// begin with "should" and be descriptive
+"Mockmvc"//  
 
 
 char[] arr = str.toCharArray(); // don't forget the 'single quotes'
@@ -1366,34 +1368,3 @@ What are the common challenges people in this possition face
 ```
 
  [![Build Status](https://dev.azure.com/definitelytyped/DefinitelyTyped/_apis/build/status/DefinitelyTyped.DefinitelyTyped?branchName=master)](https://dev.azure.com/definitelytyped/DefinitelyTyped/_build/latest?definitionId=1&branchName=master)
-
-
-
-<!-- Review sesh oop -->
-<!-- Inheritace 2-3 -->
-_Inheritance_  
-  - Why? - reusability, clean maintainable.
-  - Is-a relationship
-  - protected modifier on methods construstors and variables allows access to all subclasses
-  - all java classes extends Object class by default  
-  - **Base class**
-    - parent class/ super class  
-  - **Derived Class**
-    - child, subclass, extended class
-    - inherits meths and props of superclass
-    - Specializes the base class
-    - Adds more meth and propls
-    - Overriding provides a differnt implementation of properties and methods  
-
-
-<!-- Polymorphism -->
-_Polymorphism_ 
-  - **Polymorphism** is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. `Any Java object that can pass more than one IS-A test is considered to be polymorphic.`
-  - many formed
-  - derived types are base types
-  - The type will determine what methods are available.
-  - recall the "is-A' relationship. A developer is not always a team Lead but a TL is always a dev.
-
-
-
- ```
