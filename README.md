@@ -1,3 +1,7 @@
+_This is a repository of project completed for a Java Bootcamp @UNCC_  
+_Below, are some of the topics mentioned_  
+
+
 <a name="top"></a>
 
 ##### Keywords
